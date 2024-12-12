@@ -1,4 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://gpcqqw6efjpy"]
+[gd_scene load_steps=8 format=3 uid="uid://gpcqqw6efjpy"]
+
+[ext_resource type="Script" path="res://src/levels/test_lvl.gd" id="1_p2h7m"]
+[ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/test_object.tscn" id="2_p6ti2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1kp0d"]
 size = Vector2(312, 15)
@@ -12,7 +15,11 @@ size = Vector2(12, 307)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r5qve"]
 size = Vector2(133, 8.75)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_2q7o5"]
+radius = 60.0333
+
 [node name="test lvl" type="Node2D"]
+script = ExtResource("1_p2h7m")
 
 [node name="Room1" type="StaticBody2D" parent="."]
 
@@ -76,3 +83,25 @@ offset_left = 295.0
 offset_right = 434.0
 offset_bottom = 135.0
 color = Color(0, 1, 0, 1)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(364, 65)
+shape = SubResource("CircleShape2D_2q7o5")
+
+[node name="Objects" type="Node2D" parent="."]
+
+[node name="Object" parent="Objects" instance=ExtResource("2_p6ti2")]
+visible = false
+position = Vector2(274, 273)
+
+[node name="Object1" parent="Objects" instance=ExtResource("2_p6ti2")]
+visible = false
+position = Vector2(25, 271)
+
+[node name="Object2" parent="Objects" instance=ExtResource("2_p6ti2")]
+visible = false
+position = Vector2(458, 277)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
