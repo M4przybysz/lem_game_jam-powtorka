@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1kkcfxkbvy1m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ndll"]
+size = Vector2(1052, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nnji0"]
+size = Vector2(18.5, 1030.5)
+
+[node name="Room_Big_Closed" type="StaticBody2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 14.0
+offset_top = 9.0
+offset_right = 1039.0
+offset_bottom = 1034.0
+color = Color(1, 0, 1, 1)
+
+[node name="wall n" type="CollisionShape2D" parent="."]
+position = Vector2(533, 0)
+shape = SubResource("RectangleShape2D_6ndll")
+
+[node name="wall s" type="CollisionShape2D" parent="."]
+position = Vector2(527, 1042)
+shape = SubResource("RectangleShape2D_6ndll")
+
+[node name="wall w" type="CollisionShape2D" parent="."]
+position = Vector2(10, 525)
+shape = SubResource("RectangleShape2D_nnji0")
+
+[node name="wall w2" type="CollisionShape2D" parent="."]
+position = Vector2(1045.75, 519.75)
+shape = SubResource("RectangleShape2D_nnji0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

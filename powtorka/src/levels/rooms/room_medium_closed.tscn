@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://ofmada627bwp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mf2vb"]
+size = Vector2(676, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_txn8x"]
+size = Vector2(19, 680.5)
+
+[node name="Room_Medium_Closed" type="StaticBody2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 14.0
+offset_top = 9.0
+offset_right = 674.0
+offset_bottom = 669.0
+color = Color(1, 0, 1, 1)
+
+[node name="wall n" type="CollisionShape2D" parent="."]
+position = Vector2(342, 0)
+shape = SubResource("RectangleShape2D_mf2vb")
+
+[node name="wall s" type="CollisionShape2D" parent="."]
+position = Vector2(339, 677)
+shape = SubResource("RectangleShape2D_mf2vb")
+
+[node name="wall w" type="CollisionShape2D" parent="."]
+position = Vector2(10, 345)
+shape = SubResource("RectangleShape2D_txn8x")
+
+[node name="wall w2" type="CollisionShape2D" parent="."]
+position = Vector2(677.5, 344.75)
+shape = SubResource("RectangleShape2D_txn8x")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
