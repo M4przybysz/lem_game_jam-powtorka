@@ -1,12 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://ddg2su88rjrwp"]
 
-
 [ext_resource type="Script" path="res://src/gameplay/gameplay.gd" id="1_qu5en"]
 [ext_resource type="PackedScene" uid="uid://gpcqqw6efjpy" path="res://src/levels/test_lvl.tscn" id="1_wkdmg"]
 [ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="2_28rhj"]
 
 [node name="Gameplay" type="Node2D"]
-
 script = ExtResource("1_qu5en")
 
 [node name="test lvl" parent="." instance=ExtResource("1_wkdmg")]

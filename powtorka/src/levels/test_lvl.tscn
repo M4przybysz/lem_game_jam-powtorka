@@ -1,4 +1,5 @@
-[gd_scene load_steps=8 format=3 uid="uid://gpcqqw6efjpy"]
+[gd_scene load_steps=9 format=3 uid="uid://gpcqqw6efjpy"]
+
 [ext_resource type="PackedScene" uid="uid://brwy8u50fkdpl" path="res://src/props/teleport/teleport.tscn" id="1_5ianb"]
 [ext_resource type="Script" path="res://src/levels/test_lvl.gd" id="1_aw7th"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/test_object.tscn" id="2_p6ti2"]

@@ -34,4 +34,3 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		show_random_object1 = true
 		if get_parent().loop_count == 0:
 			show_random_object2 = true
-
