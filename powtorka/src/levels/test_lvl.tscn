@@ -1,4 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://gpcqqw6efjpy"]
+[gd_scene load_steps=7 format=3 uid="uid://gpcqqw6efjpy"]
+
+[ext_resource type="PackedScene" uid="uid://brwy8u50fkdpl" path="res://src/props/teleport/teleport.tscn" id="1_5ianb"]
+[ext_resource type="Script" path="res://src/levels/test_lvl.gd" id="1_aw7th"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1kp0d"]
 size = Vector2(312, 15)
@@ -13,6 +16,7 @@ size = Vector2(12, 307)
 size = Vector2(133, 8.75)
 
 [node name="test lvl" type="Node2D"]
+script = ExtResource("1_aw7th")
 
 [node name="Room1" type="StaticBody2D" parent="."]
 
@@ -76,3 +80,36 @@ offset_left = 295.0
 offset_right = 434.0
 offset_bottom = 135.0
 color = Color(0, 1, 0, 1)
+
+[node name="Room3" type="StaticBody2D" parent="."]
+
+[node name="wall n" type="CollisionShape2D" parent="Room3"]
+position = Vector2(335, 496)
+shape = SubResource("RectangleShape2D_1kp0d")
+
+[node name="wall s" type="CollisionShape2D" parent="Room3"]
+position = Vector2(336, 796.5)
+shape = SubResource("RectangleShape2D_1kp0d")
+
+[node name="wall w" type="CollisionShape2D" parent="Room3"]
+position = Vector2(188, 642)
+shape = SubResource("RectangleShape2D_lfui8")
+
+[node name="ColorRect" type="ColorRect" parent="Room3"]
+offset_left = 189.0
+offset_top = 498.5
+offset_right = 487.0
+offset_bottom = 796.5
+color = Color(1, 0, 1, 1)
+
+[node name="wall w2" type="CollisionShape2D" parent="Room3"]
+position = Vector2(484, 648)
+shape = SubResource("RectangleShape2D_lfui8")
+
+[node name="teleports" type="Node2D" parent="."]
+
+[node name="teleport" parent="teleports" instance=ExtResource("1_5ianb")]
+position = Vector2(621, 188)
+
+[node name="teleport1" parent="teleports" instance=ExtResource("1_5ianb")]
+position = Vector2(372, 686)
