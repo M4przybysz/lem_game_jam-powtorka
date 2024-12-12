@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://gpcqqw6efjpy"]
 
-[ext_resource type="PackedScene" uid="uid://brwy8u50fkdpl" path="res://src/props/teleport/teleport.tscn" id="1_5ianb"]
+[ext_resource type="PackedScene" uid="uid://brwy8u50fkdpl" path="res://src/teleport/teleport.tscn" id="1_5ianb"]
 [ext_resource type="Script" path="res://src/levels/test_lvl.gd" id="1_aw7th"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/test_object.tscn" id="2_p6ti2"]
 
@@ -110,12 +110,12 @@ color = Color(1, 0, 1, 1)
 position = Vector2(484, 648)
 shape = SubResource("RectangleShape2D_lfui8")
 
-[node name="teleports" type="Node2D" parent="."]
+[node name="Teleports" type="Node2D" parent="."]
 
-[node name="teleport" parent="teleports" instance=ExtResource("1_5ianb")]
+[node name="Teleport" parent="Teleports" instance=ExtResource("1_5ianb")]
 position = Vector2(621, 188)
 
-[node name="teleport1" parent="teleports" instance=ExtResource("1_5ianb")]
+[node name="Teleport1" parent="Teleports" instance=ExtResource("1_5ianb")]
 position = Vector2(372, 686)
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -127,7 +127,6 @@ shape = SubResource("CircleShape2D_2q7o5")
 [node name="Objects" type="Node2D" parent="."]
 
 [node name="Object" parent="Objects" instance=ExtResource("2_p6ti2")]
-visible = false
 position = Vector2(274, 273)
 
 [node name="Object1" parent="Objects" instance=ExtResource("2_p6ti2")]
@@ -137,5 +136,8 @@ position = Vector2(25, 271)
 [node name="Object2" parent="Objects" instance=ExtResource("2_p6ti2")]
 visible = false
 position = Vector2(458, 277)
+
+[node name="Teleport" parent="." instance=ExtResource("1_5ianb")]
+position = Vector2(472, 378)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

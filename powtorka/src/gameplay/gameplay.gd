@@ -4,7 +4,7 @@ extends Node2D
 
 
 var loop_count: int = 0
-
+var player_holds_item: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -18,8 +18,8 @@ func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("action2"):
 		loop_count += 1
 		player.reset_position()
+		$Item.reset_position()
 
 func teleport_player(x: int, y: int):
-	print("z")
 	player.global_position.x = x
 	player.global_position.y = y
