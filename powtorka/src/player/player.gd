@@ -5,6 +5,7 @@ const SPEED = 300.0
 const START_POSITION_X: int = 100
 const START_POSITION_Y: int = 100
 
+
 func _physics_process(delta: float) -> void:
 	movement()
 
@@ -28,3 +29,4 @@ func movement():
 func reset_position():
 	global_position.x = START_POSITION_X
 	global_position.y = START_POSITION_Y
+	

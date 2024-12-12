@@ -1,22 +1,22 @@
 [gd_scene load_steps=3 format=3 uid="uid://brwy8u50fkdpl"]
 
-[ext_resource type="Script" path="res://src/props/teleport/teleport.gd" id="1_7ogpx"]
+[ext_resource type="Script" path="res://src/teleport/teleport.gd" id="1_7ogpx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_arpd0"]
 size = Vector2(100, 100)
 
-[node name="teleport" type="Node2D"]
+[node name="Teleport" type="Node2D"]
 script = ExtResource("1_7ogpx")
 
 [node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(50, 50)
+shape = SubResource("RectangleShape2D_arpd0")
 
 [node name="ColorRect" type="ColorRect" parent="Area2D"]
 offset_right = 100.0
 offset_bottom = 100.0
 color = Color(0.305882, 0.392157, 1, 1)
-
-[node name="teleportShape" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(50, 50)
-shape = SubResource("RectangleShape2D_arpd0")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
