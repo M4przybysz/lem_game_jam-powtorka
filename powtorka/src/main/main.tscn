@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://bwugx2igf75bd"]
+[gd_scene load_steps=2 format=3 uid="uid://bwugx2igf75bd"]
+
+[ext_resource type="Script" path="res://src/main/main.gd" id="1_hm7m5"]
 
 [node name="Main" type="Node"]
+script = ExtResource("1_hm7m5")
 
 [node name="Menu" type="Node" parent="."]
 
