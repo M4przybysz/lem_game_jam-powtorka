@@ -16,6 +16,9 @@ func _process(delta: float) -> void:
 
 func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("action2"):
+		reset_loop()
+
+func reset_loop():
 		loop_count += 1
 		player.reset_position()
 		$Item.reset_position()

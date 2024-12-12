@@ -1,7 +1,7 @@
 extends Node2D
 
-const START_POSITION_X: int = 100
-const START_POSITION_Y: int = 250
+@export var START_POSITION_X: int = 100
+@export var START_POSITION_Y: int = 250
 
 var glued: bool = false
 var can_pick_up:bool = false
