@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddg2su88rjrwp"]
+
+[ext_resource type="PackedScene" uid="uid://gpcqqw6efjpy" path="res://src/levels/test_lvl.tscn" id="1_wkdmg"]
+
+[node name="Gameplay" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="test lvl" parent="." instance=ExtResource("1_wkdmg")]
+position = Vector2(45, 41)
