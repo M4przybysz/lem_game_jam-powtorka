@@ -119,6 +119,8 @@ shape = SubResource("RectangleShape2D_lfui8")
 
 [node name="Teleport" parent="Teleports" instance=ExtResource("1_5ianb")]
 position = Vector2(621, 188)
+destination_x = 300
+destination_y = 620
 
 [node name="Teleport1" parent="Teleports" instance=ExtResource("1_5ianb")]
 position = Vector2(372, 686)
