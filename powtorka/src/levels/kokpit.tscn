@@ -1,0 +1,247 @@
+[gd_scene load_steps=6 format=3 uid="uid://bcwa6qwmc5mku"]
+
+[ext_resource type="PackedScene" uid="uid://d1kkcfxkbvy1m" path="res://src/levels/rooms/room_big_closed.tscn" id="1_ov4ay"]
+[ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="2_p30jd"]
+[ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/test_object.tscn" id="3_dbt3h"]
+[ext_resource type="PackedScene" uid="uid://brwy8u50fkdpl" path="res://src/teleport/teleport.tscn" id="4_w2pdo"]
+[ext_resource type="PackedScene" uid="uid://u330yrurm5sq" path="res://src/objects/item.tscn" id="5_ivw83"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Room_Big_Closed" parent="." instance=ExtResource("1_ov4ay")]
+position = Vector2(-11, 5)
+
+[node name="Player" parent="." instance=ExtResource("2_p30jd")]
+position = Vector2(262, 150)
+
+[node name="Fotel" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(386, 913)
+scale = Vector2(6, 3)
+
+[node name="Fotel2" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(669, 914)
+scale = Vector2(6, 3)
+
+[node name="Butelka" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(103, 240)
+
+[node name="Butelka2" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(203, 241)
+
+[node name="Butelka3" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(403, 238)
+
+[node name="Butelka4" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(504, 238)
+
+[node name="Butelka5" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(605, 236)
+
+[node name="Butelka6" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(704, 236)
+
+[node name="Butelka7" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(800, 236)
+
+[node name="Butelka8" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(899, 236)
+
+[node name="Butelka9" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(8, 239)
+
+[node name="Butelka10" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(5, 338)
+
+[node name="Butelka11" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(104, 338)
+
+[node name="Butelka12" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(202, 338)
+
+[node name="Butelka13" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(898, 336)
+
+[node name="Butelka14" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(900, 435)
+
+[node name="Butelka15" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(700, 436)
+
+[node name="Butelka16" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(601, 439)
+
+[node name="Butelka17" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(502, 436)
+
+[node name="Butelka18" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(406, 433)
+
+[node name="Butelka19" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(307, 433)
+
+[node name="Butelka20" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(209, 438)
+
+[node name="Butelka21" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(106, 435)
+
+[node name="Butelka22" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(8, 432)
+
+[node name="Butelka23" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(5, 531)
+
+[node name="Butelka24" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(106, 531)
+
+[node name="Butelka25" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(900, 533)
+
+[node name="Butelka26" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(898, 636)
+
+[node name="Butelka27" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(797, 636)
+
+[node name="Butelka28" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(696, 636)
+
+[node name="Butelka29" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(598, 634)
+
+[node name="Butelka30" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(500, 634)
+
+[node name="Butelka31" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(401, 634)
+
+[node name="Butelka32" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(309, 634)
+
+[node name="Butelka33" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(109, 632)
+
+[node name="Butelka34" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(10, 632)
+
+[node name="Butelka35" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(8, 728)
+
+[node name="Butelka36" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(107, 730)
+
+[node name="Butelka37" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(309, 733)
+
+[node name="Butelka38" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(408, 733)
+
+[node name="Butelka39" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(502, 733)
+
+[node name="Butelka40" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(600, 735)
+
+[node name="Butelka41" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(698, 735)
+
+[node name="Butelka42" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(797, 737)
+
+[node name="Butelka43" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(898, 737)
+
+[node name="ButelkaAleBezpieczna" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(354, 289)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna2" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(354, 387)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna3" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(453, 389)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna4" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(551, 387)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna5" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(650, 387)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna12" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(749, 387)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna13" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(845, 387)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna14" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(847, 488)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna15" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(847, 586)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna16" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(749, 586)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna17" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(648, 584)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna6" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(551, 582)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna7" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(453, 584)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna8" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(359, 584)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna9" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(258, 584)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna10" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(259, 685)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna11" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(259, 784)
+scale = Vector2(5, 5)
+
+[node name="ButelkaAleBezpieczna18" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(259, 784)
+scale = Vector2(5, 5)
+
+[node name="Konsola" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(517, 988)
+scale = Vector2(51, 5)
+
+[node name="Konsola2" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(977, 891)
+scale = Vector2(5, 5)
+
+[node name="Konsola3" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(58, 895)
+scale = Vector2(5, 5)
+
+[node name="Wejście" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(243, 24)
+scale = Vector2(12, 4)
+
+[node name="Object" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(653, 62)
+scale = Vector2(15, 5)
+
+[node name="PlakietkaIDEwy" parent="." instance=ExtResource("5_ivw83")]
+position = Vector2(731, 82)
