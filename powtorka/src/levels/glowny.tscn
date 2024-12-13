@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://vlc2esek4y5n"]
+[gd_scene load_steps=4 format=3 uid="uid://vlc2esek4y5n"]
 
 [ext_resource type="PackedScene" uid="uid://d1kkcfxkbvy1m" path="res://src/levels/rooms/room_big_closed.tscn" id="1_1k4ns"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/test_object.tscn" id="2_0er4t"]
-[ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="3_cere0"]
 [ext_resource type="PackedScene" uid="uid://u330yrurm5sq" path="res://src/objects/item.tscn" id="4_0iudd"]
 
 [node name="Node2D" type="Node2D"]
@@ -13,6 +12,8 @@ position = Vector2(1, -1051)
 [node name="Stolik" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(814, -726)
 scale = Vector2(8, 16)
+
+[node name="Sprite2D" type="Sprite2D" parent="Stolik"]
 
 [node name="Krzeslo" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(956, -671)
@@ -61,9 +62,6 @@ scale = Vector2(2, 2)
 [node name="Lampka sprawdzająca działanie stacji badawczej" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(280, -56)
 
-[node name="Player" parent="." instance=ExtResource("3_cere0")]
-position = Vector2(345, -159)
-
 [node name="Lampka sprawdzająca właz" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(39, -693)
 
@@ -86,3 +84,6 @@ position = Vector2(195, -1023)
 
 [node name="Kubeczek" parent="." instance=ExtResource("4_0iudd")]
 position = Vector2(57, -301)
+
+[node name="Lampka sprawdzająca kapsule" parent="." instance=ExtResource("2_0er4t")]
+position = Vector2(41, -820)
