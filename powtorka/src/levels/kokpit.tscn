@@ -23,136 +23,67 @@ scale = Vector2(6, 3)
 position = Vector2(103, 240)
 
 [node name="Butelka" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(13, -30)
+position = Vector2(14, -60)
 
 [node name="Butelka2" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(113, -29)
-
-[node name="Butelka3" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(313, -32)
+position = Vector2(114, -59)
 
 [node name="Butelka26" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(215, -32)
+position = Vector2(216, -62)
 
 [node name="Butelka27" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(212, 66)
+position = Vector2(213, 36)
 
 [node name="Butelka28" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(313, 69)
+position = Vector2(316, -59)
 
 [node name="Butelka29" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(412, 67)
+position = Vector2(313, 39)
 
 [node name="Butelka30" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(508, 67)
+position = Vector2(712, 39)
 
 [node name="Butelka4" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(414, -32)
+position = Vector2(415, -62)
 
 [node name="Butelka5" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(515, -34)
-
-[node name="Butelka6" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(614, -34)
+position = Vector2(516, -64)
 
 [node name="Butelka7" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(710, -34)
+position = Vector2(711, -64)
 
 [node name="Butelka8" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(809, -34)
+position = Vector2(810, -64)
 
 [node name="Butelka9" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(-82, -31)
+position = Vector2(-81, -61)
 
 [node name="Butelka10" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(-85, 68)
+position = Vector2(-84, 38)
 
 [node name="Butelka11" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(14, 68)
+position = Vector2(15, 38)
 
 [node name="Butelka12" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(112, 68)
+position = Vector2(113, 38)
 
 [node name="Butelka13" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(808, 66)
-
-[node name="Butelka14" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(810, 165)
-
-[node name="Butelka15" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(610, 166)
-
-[node name="Butelka16" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(511, 169)
-
-[node name="Butelka17" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(412, 166)
-
-[node name="Butelka18" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(316, 163)
-
-[node name="Butelka19" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(217, 163)
-
-[node name="Butelka20" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(117, 166)
-
-[node name="Butelka21" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(16, 165)
-
-[node name="Butelka22" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(-82, 162)
-
-[node name="Butelka23" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(-85, 261)
-
-[node name="Butelka24" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(16, 261)
-
-[node name="Butelka31" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(119, 263)
-
-[node name="Butelka25" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(810, 263)
+position = Vector2(809, 36)
 
 [node name="ButelkaAleBezpieczna" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(658, 19)
+position = Vector2(659, -11)
 scale = Vector2(5, 5)
 
 [node name="ButelkaAleBezpieczna12" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(659, 117)
+position = Vector2(660, 87)
 scale = Vector2(5, 5)
 
 [node name="ButelkaAleBezpieczna13" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(755, 117)
+position = Vector2(462, 87)
 scale = Vector2(5, 5)
 
 [node name="ButelkaAleBezpieczna14" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(757, 218)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna15" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(757, 316)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna16" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(659, 316)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna17" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(558, 314)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna6" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(461, 312)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna7" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(363, 314)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna8" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(269, 314)
+position = Vector2(561, 87)
 scale = Vector2(5, 5)
 
 [node name="konsola-grupa" type="Node2D" parent="."]
@@ -180,10 +111,10 @@ position = Vector2(243, 24)
 scale = Vector2(12, 4)
 
 [node name="Object" parent="." instance=ExtResource("3_dbt3h")]
-position = Vector2(653, 62)
-scale = Vector2(15, 5)
+position = Vector2(678, 42)
+scale = Vector2(15, 3)
 
 [node name="assets" parent="Object" instance=ExtResource("5_llea8")]
 
 [node name="PlakietkaIDEwy" parent="." instance=ExtResource("5_ivw83")]
-position = Vector2(758, 77)
+position = Vector2(758, 45)
