@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://vlc2esek4y5n"]
+[gd_scene load_steps=5 format=3 uid="uid://nf3qwb50yoyb"]
 
 [ext_resource type="PackedScene" uid="uid://d1kkcfxkbvy1m" path="res://src/levels/rooms/room_big_closed.tscn" id="1_1k4ns"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/test_object.tscn" id="2_0er4t"]
@@ -63,6 +63,9 @@ position = Vector2(280, -56)
 
 [node name="Player" parent="." instance=ExtResource("3_cere0")]
 position = Vector2(345, -159)
+
+[node name="Lampka sprawdzająca właz2" parent="." instance=ExtResource("2_0er4t")]
+position = Vector2(38, -819)
 
 [node name="Lampka sprawdzająca właz" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(39, -693)
