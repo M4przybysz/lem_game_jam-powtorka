@@ -3,10 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://d1kkcfxkbvy1m" path="res://src/levels/rooms/room_big_closed.tscn" id="1_1k4ns"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/object.tscn" id="2_0er4t"]
 [ext_resource type="Texture2D" uid="uid://cs5tkhrvpnx6k" path="res://asstes/graphics/mapa/tekstura-metal-ziemia2.png" id="2_l6gdl"]
-[ext_resource type="Texture2D" uid="uid://5joxpiv7tb62" path="res://asstes/graphics/mapa/krzeso2.png" id="3_7dd5d"]
 [ext_resource type="PackedScene" uid="uid://brwy8u50fkdpl" path="res://src/teleport/teleport.tscn" id="3_emaev"]
 [ext_resource type="Texture2D" uid="uid://cq2nmcwblbu13" path="res://asstes/graphics/mapa/wlaz2.png" id="4_1cvcg"]
-[ext_resource type="Texture2D" uid="uid://sc3ltnisc0lc" path="res://asstes/graphics/mapa/krzeso1.png" id="4_kxc68"]
+[ext_resource type="Texture2D" uid="uid://b64fal8l1plc0" path="res://asstes/graphics/mapa/krzes2.png" id="4_uajev"]
+[ext_resource type="Texture2D" uid="uid://cmjjfft01wnq1" path="res://asstes/graphics/mapa/krzeso.png" id="5_84dcs"]
 [ext_resource type="Texture2D" uid="uid://bs0y2sliotu2d" path="res://asstes/graphics/mapa/stol.png" id="5_sy3b7"]
 [ext_resource type="Texture2D" uid="uid://b206iqu5g4lap" path="res://asstes/graphics/mapa/bieznia.png" id="6_dmbcm"]
 [ext_resource type="Texture2D" uid="uid://bodt10rckr7x6" path="res://asstes/graphics/mapa/stacja-badawcza.png" id="7_2lhiq"]
@@ -35,7 +35,7 @@ scale = Vector2(5, 5)
 [node name="Sprite2D" type="Sprite2D" parent="Krzeslo2"]
 position = Vector2(3.8, -5.2)
 scale = Vector2(0.044, 0.044)
-texture = ExtResource("3_7dd5d")
+texture = ExtResource("4_uajev")
 
 [node name="Krzeslo" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(956, -671)
@@ -44,7 +44,7 @@ scale = Vector2(5, 5)
 [node name="Sprite2D" type="Sprite2D" parent="Krzeslo"]
 position = Vector2(3.8, -5.2)
 scale = Vector2(0.044, 0.044)
-texture = ExtResource("3_7dd5d")
+texture = ExtResource("4_uajev")
 
 [node name="Krzeslo3" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(673, -792)
@@ -53,7 +53,7 @@ scale = Vector2(5, 5)
 [node name="Sprite2D" type="Sprite2D" parent="Krzeslo3"]
 position = Vector2(2.4, -5)
 scale = Vector2(0.0436, 0.0436)
-texture = ExtResource("4_kxc68")
+texture = ExtResource("5_84dcs")
 
 [node name="Stolik" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(814, -726)
