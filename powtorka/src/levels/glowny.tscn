@@ -3,7 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://d1kkcfxkbvy1m" path="res://src/levels/rooms/room_big_closed.tscn" id="1_1k4ns"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/test_object.tscn" id="2_0er4t"]
 [ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="3_cere0"]
-[ext_resource type="PackedScene" uid="uid://u330yrurm5sq" path="res://src/objects/item.tscn" id="4_0iudd"]
+[ext_resource type="PackedScene" uid="uid://bsjliawskluyg" path="res://src/levels/assets/assets_base.tscn" id="3_wvou0"]
+[ext_resource type="PackedScene" path="res://src/objects/item.tscn" id="4_0iudd"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -13,6 +14,8 @@ position = Vector2(1, -1051)
 [node name="Stolik" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(814, -726)
 scale = Vector2(8, 16)
+
+[node name="assets" parent="Stolik" instance=ExtResource("3_wvou0")]
 
 [node name="Krzeslo" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(956, -671)
@@ -30,13 +33,20 @@ scale = Vector2(5, 5)
 position = Vector2(942, -185)
 scale = Vector2(6, 14)
 
+[node name="assets" parent="Bierznia" instance=ExtResource("3_wvou0")]
+position = Vector2(-109.154, 25.0695)
+
 [node name="Stacja badawcza" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(141, -56)
 scale = Vector2(12, 4)
 
+[node name="assets" parent="Stacja badawcza" instance=ExtResource("3_wvou0")]
+
 [node name="Stacja badawcza2" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(61, -214)
 scale = Vector2(4, 12)
+
+[node name="assets" parent="Stacja badawcza2" instance=ExtResource("3_wvou0")]
 
 [node name="Właz" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(7, -509)
@@ -46,17 +56,25 @@ scale = Vector2(4, 16)
 position = Vector2(98, -1021)
 scale = Vector2(8, 2)
 
+[node name="assets" parent="Rury" instance=ExtResource("3_wvou0")]
+
 [node name="Rury2" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(38, -921)
 scale = Vector2(2, 8)
+
+[node name="assets" parent="Rury2" instance=ExtResource("3_wvou0")]
 
 [node name="Kapsula" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(9, -761)
 scale = Vector2(4, 4)
 
+[node name="assets" parent="Kapsula" instance=ExtResource("3_wvou0")]
+
 [node name="Wieszak na skafander" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(289, -1036)
 scale = Vector2(2, 2)
+
+[node name="assets" parent="Wieszak na skafander" instance=ExtResource("3_wvou0")]
 
 [node name="Lampka sprawdzająca działanie stacji badawczej" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(280, -56)
