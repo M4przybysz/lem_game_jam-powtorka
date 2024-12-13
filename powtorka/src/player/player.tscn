@@ -1,6 +1,7 @@
-[gd_scene load_steps=29 format=3 uid="uid://cshqsixm2pc76"]
+[gd_scene load_steps=30 format=3 uid="uid://cshqsixm2pc76"]
 
 [ext_resource type="Script" path="res://src/player/player.gd" id="1_vkcnm"]
+[ext_resource type="AudioStream" uid="uid://b3jr3xjqstxdv" path="res://asstes/SFX/chod 1.wav" id="2_8imps"]
 [ext_resource type="Texture2D" uid="uid://bfn2erntkokn2" path="res://asstes/graphics/player/chodtyl.png" id="2_c7m2d"]
 [ext_resource type="Texture2D" uid="uid://cq7wsb705q1bi" path="res://asstes/graphics/player/chodprzod.png" id="2_ynah2"]
 [ext_resource type="Texture2D" uid="uid://bpa2pm1yx0mwg" path="res://asstes/graphics/player/chodlewo.png" id="3_6n54d"]
@@ -188,6 +189,7 @@ size = Vector2(35, 82)
 script = ExtResource("1_vkcnm")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_8imps")
 
 [node name="animation" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.3, 0.3)

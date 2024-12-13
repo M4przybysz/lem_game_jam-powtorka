@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ya5stgn0ktm7"
+path="res://.godot/imported/chod minmax.wav-a2e3edb267d67c7f589008dd80d213a5.sample"
+
+[deps]
+
+source_file="res://asstes/SFX/chod minmax.wav"
+dest_files=["res://.godot/imported/chod minmax.wav-a2e3edb267d67c7f589008dd80d213a5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
