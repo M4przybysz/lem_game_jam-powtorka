@@ -50,16 +50,6 @@ scale = Vector2(2, 8)
 position = Vector2(9, -761)
 scale = Vector2(4, 4)
 
-[node name="Wlaz" parent="." instance=ExtResource("3_emaev")]
-position = Vector2(-10, -657)
-scale = Vector2(0.5, 3)
-destination_x = 250
-
-[node name="Sprite2D" type="Sprite2D" parent="Wlaz"]
-position = Vector2(-54, 52.6667)
-scale = Vector2(0.5, 0.11)
-texture = ExtResource("4_1cvcg")
-
 [node name="Wieszak na skafander" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(289, -1036)
 scale = Vector2(2, 2)
@@ -85,3 +75,47 @@ scale = Vector2(5, 5)
 
 [node name="Lampka sprawdzająca rury" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(195, -1023)
+
+[node name="Wlaz" parent="." instance=ExtResource("3_emaev")]
+position = Vector2(-10, -657)
+scale = Vector2(0.5, 3)
+destination_x = 250
+
+[node name="Sprite2D" type="Sprite2D" parent="Wlaz"]
+position = Vector2(-54, 52.6667)
+scale = Vector2(0.5, 0.11)
+texture = ExtResource("4_1cvcg")
+
+[node name="Wlaz1" parent="." instance=ExtResource("3_emaev")]
+position = Vector2(991, -562)
+scale = Vector2(0.5, 2)
+destination_x = 200
+destination_y = 5950
+
+[node name="Sprite2D" type="Sprite2D" parent="Wlaz1"]
+position = Vector2(156, 52)
+scale = Vector2(0.5, 0.11)
+texture = ExtResource("4_1cvcg")
+flip_h = true
+
+[node name="Wlaz2" parent="." instance=ExtResource("3_emaev")]
+position = Vector2(440, -69)
+scale = Vector2(2, 0.5)
+destination_x = 250
+destination_y = 3700
+
+[node name="Sprite2D" type="Sprite2D" parent="Wlaz2"]
+position = Vector2(51, 142)
+rotation = -1.5708
+scale = Vector2(0.5, 0.1)
+texture = ExtResource("4_1cvcg")
+
+[node name="Wlaz3" parent="." instance=ExtResource("2_0er4t")]
+position = Vector2(512, -1032)
+scale = Vector2(8, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wlaz3"]
+position = Vector2(-0.375, -23)
+rotation = 1.5708
+scale = Vector2(0.1, 0.022)
+texture = ExtResource("4_1cvcg")

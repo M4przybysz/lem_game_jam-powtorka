@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var player: CharacterBody2D = $Player
+@onready var ui: Control = $CanvasLayer/UI
 
 var loop_count: int = 0
 var player_holds_item: bool = false

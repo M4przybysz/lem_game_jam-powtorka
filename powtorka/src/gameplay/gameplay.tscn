@@ -35,6 +35,10 @@ position = Vector2(118, 66)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="UI" parent="CanvasLayer" instance=ExtResource("4_gb6tb")]
+offset_left = -12.0
+offset_top = 23.0
+offset_right = -12.0
+offset_bottom = 23.0
 
 [node name="Kubeczek" parent="." instance=ExtResource("4_44x78")]
 position = Vector2(20, 1945)
@@ -58,7 +62,7 @@ scale = Vector2(0.1, 0.1)
 texture = ExtResource("10_angt0")
 
 [node name="PlakietkaIDEwy" parent="." instance=ExtResource("4_44x78")]
-position = Vector2(715, 3400)
+position = Vector2(723, 3532)
 START_POSITION_X = 715
 START_POSITION_Y = 3400
 
