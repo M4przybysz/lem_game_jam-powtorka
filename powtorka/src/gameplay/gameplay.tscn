@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cgssltc1n83kf" path="res://src/UI/ui.tscn" id="4_gb6tb"]
 
 [node name="Gameplay" type="Node2D"]
+position = Vector2(-1912, 881)
 script = ExtResource("1_qu5en")
 
 [node name="test lvl" parent="." instance=ExtResource("1_wkdmg")]
