@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://byijgbgy51b47" path="res://src/levels/sypialnia.tscn" id="2_rd5ia"]
 [ext_resource type="PackedScene" uid="uid://b2w7emtaenbme" path="res://src/levels/glowny.tscn" id="3_gudmw"]
 [ext_resource type="PackedScene" uid="uid://6o85knhcbaqp" path="res://src/levels/kokpit.tscn" id="5_a6v07"]
+[ext_resource type="PackedScene" uid="uid://u330yrurm5sq" path="res://src/objects/item.tscn" id="4_44x78"]
+[ext_resource type="PackedScene" uid="uid://cgssltc1n83kf" path="res://src/UI/ui.tscn" id="4_gb6tb"]
 
 [node name="Gameplay" type="Node2D"]
 script = ExtResource("1_qu5en")
@@ -18,7 +20,14 @@ position = Vector2(-11, 1064)
 [node name="Room_Small_Closed" parent="." instance=ExtResource("2_rd5ia")]
 position = Vector2(1918, 1124)
 
+[node name="Item" parent="." instance=ExtResource("4_44x78")]
+position = Vector2(100, 231)
+
 [node name="Player" parent="." instance=ExtResource("2_28rhj")]
 position = Vector2(231, 120)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource("4_gb6tb")]
