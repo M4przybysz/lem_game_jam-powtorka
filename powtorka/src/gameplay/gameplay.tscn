@@ -1,21 +1,33 @@
-[gd_scene load_steps=5 format=3 uid="uid://ddg2su88rjrwp"]
+[gd_scene load_steps=6 format=3 uid="uid://ddg2su88rjrwp"]
 
 [ext_resource type="Script" path="res://src/gameplay/gameplay.gd" id="1_qu5en"]
-[ext_resource type="PackedScene" uid="uid://gpcqqw6efjpy" path="res://src/levels/test_lvl.tscn" id="1_wkdmg"]
 [ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="2_28rhj"]
+[ext_resource type="PackedScene" uid="uid://byijgbgy51b47" path="res://src/levels/sypialnia.tscn" id="2_rd5ia"]
+[ext_resource type="PackedScene" uid="uid://b2w7emtaenbme" path="res://src/levels/glowny.tscn" id="3_gudmw"]
+[ext_resource type="PackedScene" uid="uid://6o85knhcbaqp" path="res://src/levels/kokpit.tscn" id="5_a6v07"]
 [ext_resource type="PackedScene" uid="uid://u330yrurm5sq" path="res://src/objects/item.tscn" id="4_44x78"]
+[ext_resource type="PackedScene" uid="uid://cgssltc1n83kf" path="res://src/UI/ui.tscn" id="4_gb6tb"]
 
 [node name="Gameplay" type="Node2D"]
-position = Vector2(-1912, 881)
 script = ExtResource("1_qu5en")
 
-[node name="test lvl" parent="." instance=ExtResource("1_wkdmg")]
-position = Vector2(39, 41)
+[node name="Node2D2" parent="." instance=ExtResource("5_a6v07")]
+position = Vector2(-2045, 1016)
 
-[node name="Player" parent="." instance=ExtResource("2_28rhj")]
-position = Vector2(100, 100)
+[node name="Node2D" parent="." instance=ExtResource("3_gudmw")]
+position = Vector2(-11, 1064)
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
+[node name="Room_Small_Closed" parent="." instance=ExtResource("2_rd5ia")]
+position = Vector2(1918, 1124)
 
 [node name="Item" parent="." instance=ExtResource("4_44x78")]
 position = Vector2(100, 231)
+
+[node name="Player" parent="." instance=ExtResource("2_28rhj")]
+position = Vector2(231, 120)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource("4_gb6tb")]
