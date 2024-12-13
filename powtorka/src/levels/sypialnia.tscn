@@ -104,3 +104,7 @@ destination_y = 1750
 position = Vector2(-60, 52)
 scale = Vector2(0.5, 0.11)
 texture = ExtResource("3_1sukp")
+
+[node name="krzesło" parent="." instance=ExtResource("1_0cd3x")]
+position = Vector2(262, 226)
+scale = Vector2(1.56, 1.36)
