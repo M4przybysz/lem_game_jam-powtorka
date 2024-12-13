@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://byijgbgy51b47"]
+[gd_scene load_steps=4 format=3 uid="uid://byijgbgy51b47"]
 
-[ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/test_object.tscn" id="1_0cd3x"]
-[ext_resource type="PackedScene" uid="uid://bsjliawskluyg" path="res://src/levels/assets/assets_base.tscn" id="2_trqxc"]
+[ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/object.tscn" id="1_0cd3x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mf2vb"]
 size = Vector2(312, 15)
@@ -44,22 +43,14 @@ scale = Vector2(-8.57845, 5.71761)
 position = Vector2(53, 159)
 scale = Vector2(2.84, 2.76)
 
-[node name="assets" parent="stolik nocny" instance=ExtResource("2_trqxc")]
-
 [node name="komoda" parent="." instance=ExtResource("1_0cd3x")]
 position = Vector2(86, 281)
 scale = Vector2(7.24348, 2.72)
-
-[node name="assets" parent="komoda" instance=ExtResource("2_trqxc")]
 
 [node name="biurko" parent="." instance=ExtResource("1_0cd3x")]
 position = Vector2(257, 280)
 scale = Vector2(5.24, 2.72)
 
-[node name="assets" parent="biurko" instance=ExtResource("2_trqxc")]
-
 [node name="krzesło" parent="." instance=ExtResource("1_0cd3x")]
 position = Vector2(262, 226)
 scale = Vector2(1.56, 1.36)
-
-[node name="assets" parent="krzesło" instance=ExtResource("2_trqxc")]
