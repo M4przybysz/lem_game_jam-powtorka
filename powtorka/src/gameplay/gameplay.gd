@@ -2,7 +2,6 @@ extends Node2D
 
 @onready var player: CharacterBody2D = $Player
 
-
 var loop_count: int = 0
 var player_holds_item: bool = false
 
@@ -24,5 +23,7 @@ func reset_loop():
 		$Item.reset_position()
 
 func teleport_player(x: int, y: int):
+	print(x, y)
+	print(player.global_position)
 	player.global_position.x = x
 	player.global_position.y = y

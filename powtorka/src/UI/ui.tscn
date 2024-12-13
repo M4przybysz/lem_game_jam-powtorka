@@ -60,6 +60,7 @@ autowrap_mode = 3
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false
 material = SubResource("ShaderMaterial_84yst")
+layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 

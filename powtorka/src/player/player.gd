@@ -23,7 +23,8 @@ func movement():
 		velocity.x = -SPEED
 	else:
 		velocity.x = 0
-
+	
+	print(global_position)
 	move_and_slide()
 
 func reset_position():
