@@ -21,6 +21,7 @@ size = Vector2(133, 8.75)
 radius = 60.0333
 
 [node name="test lvl" type="Node2D"]
+position = Vector2(-1532, 539)
 script = ExtResource("1_aw7th")
 
 [node name="Room1" type="StaticBody2D" parent="."]
@@ -46,6 +47,7 @@ offset_left = 431.0
 offset_right = 729.0
 offset_bottom = 298.0
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="Room2" type="StaticBody2D" parent="."]
 
@@ -69,6 +71,7 @@ shape = SubResource("RectangleShape2D_lfui8")
 offset_right = 298.0
 offset_bottom = 298.0
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="corridor gayen\'t" parent="." instance=ExtResource("2_uhx2c")]
 position = Vector2(290, -6)
@@ -110,6 +113,7 @@ offset_top = 498.5
 offset_right = 487.0
 offset_bottom = 796.5
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="wall w2" type="CollisionShape2D" parent="Room3"]
 position = Vector2(484, 648)
