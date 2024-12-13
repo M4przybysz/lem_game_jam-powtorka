@@ -20,10 +20,10 @@ func _input(event: InputEvent) -> void:
 func reset_loop():
 		loop_count += 1
 		player.reset_position()
-		$Item.reset_position()
+		$Kubeczek.reset_position()
+		$Krzeslo4.reset_position()
+		$PlakietkaIDEwy.reset_position()
 
 func teleport_player(x: int, y: int):
-	print(x, y)
-	print(player.global_position)
 	player.global_position.x = x
 	player.global_position.y = y

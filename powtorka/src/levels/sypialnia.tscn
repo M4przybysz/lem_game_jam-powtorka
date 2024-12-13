@@ -98,9 +98,9 @@ position = Vector2(321, 142)
 rotation = -3.14159
 scale = Vector2(0.2, 1)
 destination_x = 50
-destination_y = 50
+destination_y = 1750
 
 [node name="Sprite2D" type="Sprite2D" parent="Wlaz"]
-position = Vector2(-45, 54)
-scale = Vector2(0.5, 0.1)
+position = Vector2(-60, 52)
+scale = Vector2(0.5, 0.11)
 texture = ExtResource("3_1sukp")

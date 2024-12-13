@@ -3,8 +3,8 @@ extends Node2D
 @export var START_POSITION_X: int = 100
 @export var START_POSITION_Y: int = 250
 
-var glued: bool = false
-var can_pick_up:bool = false
+var glued = false
+var can_pick_up: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -20,7 +20,7 @@ func _input(event: InputEvent) -> void:
 			glued = true
 			can_pick_up = false
 			get_parent().player_holds_item = true
-		elif get_parent().player_holds_item == true:
+		else:
 			glued = false
 			get_parent().player_holds_item = false
 
@@ -32,6 +32,10 @@ func move_to_player():
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		can_pick_up = true
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		can_pick_up = false
 
 func reset_position():
 	glued = false

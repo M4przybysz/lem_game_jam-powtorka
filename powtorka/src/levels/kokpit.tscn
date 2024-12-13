@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bcwa6qwmc5mku"]
+[gd_scene load_steps=5 format=3 uid="uid://bcwa6qwmc5mku"]
 
 [ext_resource type="PackedScene" uid="uid://d1kkcfxkbvy1m" path="res://src/levels/rooms/room_big_closed.tscn" id="1_ov4ay"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/object.tscn" id="3_dbt3h"]
 [ext_resource type="PackedScene" uid="uid://brwy8u50fkdpl" path="res://src/teleport/teleport.tscn" id="4_w2pdo"]
-[ext_resource type="PackedScene" uid="uid://u330yrurm5sq" path="res://src/objects/item.tscn" id="5_ivw83"]
 [ext_resource type="PackedScene" uid="uid://bsjliawskluyg" path="res://src/levels/assets/assets_base.tscn" id="5_llea8"]
 
 [node name="Node2D2" type="Node2D"]
@@ -20,7 +19,7 @@ position = Vector2(669, 914)
 scale = Vector2(6, 3)
 
 [node name="butelkas" type="Node2D" parent="."]
-position = Vector2(103, 240)
+position = Vector2(106, 258)
 
 [node name="Butelka" parent="butelkas" instance=ExtResource("4_w2pdo")]
 position = Vector2(14, -60)
@@ -115,6 +114,3 @@ position = Vector2(678, 42)
 scale = Vector2(15, 3)
 
 [node name="assets" parent="Object" instance=ExtResource("5_llea8")]
-
-[node name="PlakietkaIDEwy" parent="." instance=ExtResource("5_ivw83")]
-position = Vector2(758, 45)

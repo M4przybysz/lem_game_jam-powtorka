@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://boa3cfwlhfj1q" path="res://asstes/graphics/mapa/rury2.png" id="8_c2l58"]
 [ext_resource type="Texture2D" uid="uid://c6j8hfvlwges3" path="res://asstes/graphics/mapa/rury.png" id="9_jpe54"]
 [ext_resource type="Texture2D" uid="uid://bc1faromt8p7g" path="res://asstes/graphics/mapa/wieszak.png" id="11_arsgh"]
+[ext_resource type="PackedScene" uid="uid://brwy8u50fkdpl" path="res://src/teleport/teleport.tscn" id="3_emaev"]
+[ext_resource type="Texture2D" uid="uid://cq2nmcwblbu13" path="res://asstes/graphics/mapa/wlaz2.png" id="4_1cvcg"]
 
 [node name="Glowna" type="Node2D"]
 
@@ -108,6 +110,16 @@ texture = ExtResource("9_jpe54")
 position = Vector2(9, -761)
 scale = Vector2(4, 4)
 
+[node name="Wlaz" parent="." instance=ExtResource("3_emaev")]
+position = Vector2(-10, -657)
+scale = Vector2(0.5, 3)
+destination_x = 250
+
+[node name="Sprite2D" type="Sprite2D" parent="Wlaz"]
+position = Vector2(-54, 52.6667)
+scale = Vector2(0.5, 0.11)
+texture = ExtResource("4_1cvcg")
+
 [node name="Wieszak na skafander" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(289, -1036)
 scale = Vector2(2, 2)
@@ -132,16 +144,9 @@ position = Vector2(949, -353)
 [node name="Lampka sprawdzająca porządek" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(821, -905)
 
-[node name="Krzeslo4" parent="." instance=ExtResource("4_0iudd")]
-position = Vector2(547, -417)
-scale = Vector2(2, 2)
-
 [node name="miejsce na krzeslo" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(676, -657)
 scale = Vector2(5, 5)
 
 [node name="Lampka sprawdzająca rury" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(195, -1023)
-
-[node name="Kubeczek" parent="." instance=ExtResource("4_0iudd")]
-position = Vector2(57, -301)

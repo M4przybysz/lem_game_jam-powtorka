@@ -9,13 +9,12 @@ size = Vector2(50, 50)
 script = ExtResource("1_rbdo8")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 offset_left = -25.0
 offset_top = -25.0
 offset_right = 25.0
 offset_bottom = 25.0
 color = Color(1, 1, 0, 1)
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
 
 [node name="Area2D" type="Area2D" parent="."]
 
@@ -23,3 +22,4 @@ color = Color(1, 1, 0, 1)
 shape = SubResource("RectangleShape2D_0rlx2")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

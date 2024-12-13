@@ -1,12 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://ddg2su88rjrwp"]
+[gd_scene load_steps=12 format=3 uid="uid://ddg2su88rjrwp"]
 
 [ext_resource type="Script" path="res://src/gameplay/gameplay.gd" id="1_qu5en"]
 [ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="2_28rhj"]
-[ext_resource type="PackedScene" uid="uid://byijgbgy51b47" path="res://src/levels/sypialnia.tscn" id="2_rd5ia"]
-[ext_resource type="PackedScene" uid="uid://b2w7emtaenbme" path="res://src/levels/glowny.tscn" id="3_gudmw"]
+[ext_resource type="PackedScene" uid="uid://c20f17njqysr" path="res://src/levels/sypialnia.tscn" id="2_rd5ia"]
+[ext_resource type="PackedScene" uid="uid://baea7r4fbw8lr" path="res://src/levels/glowny.tscn" id="3_gudmw"]
+[ext_resource type="PackedScene" uid="uid://u330yrurm5sq" path="res://src/objects/item.tscn" id="4_44x78"]
 [ext_resource type="PackedScene" uid="uid://cgssltc1n83kf" path="res://src/UI/ui.tscn" id="4_gb6tb"]
-[ext_resource type="PackedScene" uid="uid://6o85knhcbaqp" path="res://src/levels/kokpit.tscn" id="5_a6v07"]
-[ext_resource type="PackedScene" path="res://src/levels/kuchnia.tscn" id="5_lja5u"]
+[ext_resource type="PackedScene" uid="uid://bcwa6qwmc5mku" path="res://src/levels/kokpit.tscn" id="5_a6v07"]
+[ext_resource type="PackedScene" uid="uid://cwblrpmalwlie" path="res://src/levels/kuchnia.tscn" id="5_lja5u"]
+[ext_resource type="Texture2D" uid="uid://gfjdl53o7iuk" path="res://asstes/graphics/mapa/kupek.png" id="9_ld6nv"]
+[ext_resource type="Texture2D" uid="uid://sc3ltnisc0lc" path="res://asstes/graphics/mapa/krzeso1.png" id="10_angt0"]
+[ext_resource type="Texture2D" uid="uid://ccwgn0h7l6r3n" path="res://asstes/graphics/mapa/KARTA_DOSTEPU.png" id="11_gwqab"]
 
 [node name="Gameplay" type="Node2D"]
 script = ExtResource("1_qu5en")
@@ -31,3 +35,34 @@ position = Vector2(118, 66)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="UI" parent="CanvasLayer" instance=ExtResource("4_gb6tb")]
+
+[node name="Kubeczek" parent="." instance=ExtResource("4_44x78")]
+position = Vector2(20, 1945)
+START_POSITION_X = 20
+START_POSITION_Y = 1945
+
+[node name="Sprite2D2" type="Sprite2D" parent="Kubeczek"]
+position = Vector2(10, -0.999996)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("9_ld6nv")
+
+[node name="Krzeslo4" parent="." instance=ExtResource("4_44x78")]
+position = Vector2(500, 1800)
+scale = Vector2(2, 2)
+START_POSITION_X = 500
+START_POSITION_Y = 1800
+
+[node name="Sprite2D2" type="Sprite2D" parent="Krzeslo4"]
+position = Vector2(-2, -9)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("10_angt0")
+
+[node name="PlakietkaIDEwy" parent="." instance=ExtResource("4_44x78")]
+position = Vector2(715, 3400)
+START_POSITION_X = 715
+START_POSITION_Y = 3400
+
+[node name="Sprite2D2" type="Sprite2D" parent="PlakietkaIDEwy"]
+position = Vector2(0, -2)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("11_gwqab")

@@ -31,7 +31,7 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 color = Color(0, 0, 0, 1)
 
-[node name="Terapeutka" type="Label" parent="."]
+[node name="Terapeutka" type="Label" parent="Black"]
 visible = false
 layout_mode = 0
 offset_left = 1.0
@@ -63,6 +63,8 @@ material = SubResource("ShaderMaterial_84yst")
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
+
+[node name="TextTimer" type="Timer" parent="."]
 
 [connection signal="timeout" from="UnshaderTimer" to="." method="_on_unshader_timer_timeout"]
 [connection signal="timeout" from="ShaderTimer" to="." method="_on_shader_timer_timeout"]
