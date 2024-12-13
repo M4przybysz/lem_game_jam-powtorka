@@ -4,9 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="2_28rhj"]
 [ext_resource type="PackedScene" uid="uid://byijgbgy51b47" path="res://src/levels/sypialnia.tscn" id="2_rd5ia"]
 [ext_resource type="PackedScene" uid="uid://b2w7emtaenbme" path="res://src/levels/glowny.tscn" id="3_gudmw"]
-[ext_resource type="PackedScene" uid="uid://6o85knhcbaqp" path="res://src/levels/kokpit.tscn" id="5_a6v07"]
-[ext_resource type="PackedScene" uid="uid://u330yrurm5sq" path="res://src/objects/item.tscn" id="4_44x78"]
+[ext_resource type="PackedScene" path="res://src/objects/item.tscn" id="4_44x78"]
 [ext_resource type="PackedScene" uid="uid://cgssltc1n83kf" path="res://src/UI/ui.tscn" id="4_gb6tb"]
+[ext_resource type="PackedScene" uid="uid://6o85knhcbaqp" path="res://src/levels/kokpit.tscn" id="5_a6v07"]
+[ext_resource type="PackedScene" uid="uid://d3e8m6kx6ty1x" path="res://src/levels/kuchnia.tscn" id="5_lja5u"]
+[ext_resource type="Texture2D" uid="uid://gfjdl53o7iuk" path="res://asstes/graphics/mapa/kupek.png" id="9_ld6nv"]
+[ext_resource type="Texture2D" uid="uid://sc3ltnisc0lc" path="res://asstes/graphics/mapa/krzeso1.png" id="10_angt0"]
+[ext_resource type="Texture2D" uid="uid://ccwgn0h7l6r3n" path="res://asstes/graphics/mapa/KARTA_DOSTEPU.png" id="11_gwqab"]
 
 [node name="Gameplay" type="Node2D"]
 script = ExtResource("1_qu5en")
