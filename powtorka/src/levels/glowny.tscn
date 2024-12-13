@@ -69,27 +69,15 @@ scale = Vector2(6, 14)
 position = Vector2(0, -2.75893)
 scale = Vector2(0.048, 0.0344821)
 texture = ExtResource("6_dmbcm")
-[node name="Stacja badawcza" parent="." instance=ExtResource("2_0er4t")]
-position = Vector2(141, -56)
-scale = Vector2(12, 4)
 
 [node name="Stacja badawcza2" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(61, -214)
 scale = Vector2(4, 12)
 
-
 [node name="Sprite2D" type="Sprite2D" parent="Stacja badawcza2"]
 position = Vector2(24.5625, 4.33333)
 scale = Vector2(0.077125, 0.0271667)
 texture = ExtResource("7_2lhiq")
-
-[node name="Stacja badawcza" parent="." instance=ExtResource("2_0er4t")]
-position = Vector2(141, -56)
-scale = Vector2(12, 4)
-
-[node name="Właz" parent="." instance=ExtResource("2_0er4t")]
-position = Vector2(7, -509)
-scale = Vector2(4, 16)
 
 [node name="Rury" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(98, -1021)
