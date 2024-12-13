@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bcwa6qwmc5mku"]
+[gd_scene load_steps=6 format=3 uid="uid://dlbeovj22gdg5"]
 
 [ext_resource type="PackedScene" uid="uid://d1kkcfxkbvy1m" path="res://src/levels/rooms/room_big_closed.tscn" id="1_ov4ay"]
 [ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="2_p30jd"]
@@ -12,7 +12,7 @@
 position = Vector2(-11, 5)
 
 [node name="Player" parent="." instance=ExtResource("2_p30jd")]
-position = Vector2(262, 150)
+position = Vector2(270, 141)
 
 [node name="Fotel" parent="." instance=ExtResource("3_dbt3h")]
 position = Vector2(386, 913)
