@@ -1,7 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://baea7r4fbw8lr"]
+[gd_scene load_steps=13 format=3 uid="uid://b2w7emtaenbme"]
 
 [ext_resource type="PackedScene" uid="uid://d1kkcfxkbvy1m" path="res://src/levels/rooms/room_big_closed.tscn" id="1_1k4ns"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/object.tscn" id="2_0er4t"]
+[ext_resource type="Texture2D" uid="uid://cs5tkhrvpnx6k" path="res://asstes/graphics/mapa/tekstura-metal-ziemia2.png" id="2_l6gdl"]
+[ext_resource type="Texture2D" uid="uid://5joxpiv7tb62" path="res://asstes/graphics/mapa/krzeso2.png" id="3_7dd5d"]
+[ext_resource type="PackedScene" path="res://src/objects/item.tscn" id="4_0iudd"]
+[ext_resource type="Texture2D" uid="uid://sc3ltnisc0lc" path="res://asstes/graphics/mapa/krzeso1.png" id="4_kxc68"]
+[ext_resource type="Texture2D" uid="uid://bs0y2sliotu2d" path="res://asstes/graphics/mapa/stol.png" id="5_sy3b7"]
+[ext_resource type="Texture2D" uid="uid://b206iqu5g4lap" path="res://asstes/graphics/mapa/bieznia.png" id="6_dmbcm"]
+[ext_resource type="Texture2D" uid="uid://bodt10rckr7x6" path="res://asstes/graphics/mapa/stacja-badawcza.png" id="7_2lhiq"]
+[ext_resource type="Texture2D" uid="uid://boa3cfwlhfj1q" path="res://asstes/graphics/mapa/rury2.png" id="8_c2l58"]
+[ext_resource type="Texture2D" uid="uid://c6j8hfvlwges3" path="res://asstes/graphics/mapa/rury.png" id="9_jpe54"]
+[ext_resource type="Texture2D" uid="uid://bc1faromt8p7g" path="res://asstes/graphics/mapa/wieszak.png" id="11_arsgh"]
 [ext_resource type="PackedScene" uid="uid://brwy8u50fkdpl" path="res://src/teleport/teleport.tscn" id="3_emaev"]
 [ext_resource type="Texture2D" uid="uid://cq2nmcwblbu13" path="res://asstes/graphics/mapa/wlaz2.png" id="4_1cvcg"]
 
@@ -10,41 +20,91 @@
 [node name="glowny" parent="." instance=ExtResource("1_1k4ns")]
 position = Vector2(1, -1051)
 
-[node name="Stolik" parent="." instance=ExtResource("2_0er4t")]
-position = Vector2(814, -726)
-scale = Vector2(8, 16)
-
-[node name="Krzeslo" parent="." instance=ExtResource("2_0er4t")]
-position = Vector2(956, -671)
-scale = Vector2(5, 5)
+[node name="Sprite2D2" type="Sprite2D" parent="glowny"]
+position = Vector2(528.631, 520)
+rotation = 1.5708
+scale = Vector2(1, 1.39677)
+texture = ExtResource("2_l6gdl")
 
 [node name="Krzeslo2" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(955, -785)
 scale = Vector2(5, 5)
 
+[node name="Sprite2D" type="Sprite2D" parent="Krzeslo2"]
+position = Vector2(3.8, -5.2)
+scale = Vector2(0.044, 0.044)
+texture = ExtResource("3_7dd5d")
+
+[node name="Krzeslo" parent="." instance=ExtResource("2_0er4t")]
+position = Vector2(956, -671)
+scale = Vector2(5, 5)
+
+[node name="Sprite2D" type="Sprite2D" parent="Krzeslo"]
+position = Vector2(3.8, -5.2)
+scale = Vector2(0.044, 0.044)
+texture = ExtResource("3_7dd5d")
+
 [node name="Krzeslo3" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(673, -792)
 scale = Vector2(5, 5)
+
+[node name="Sprite2D" type="Sprite2D" parent="Krzeslo3"]
+position = Vector2(2.4, -5)
+scale = Vector2(0.0436, 0.0436)
+texture = ExtResource("4_kxc68")
+
+[node name="Stolik" parent="." instance=ExtResource("2_0er4t")]
+position = Vector2(814, -726)
+scale = Vector2(8, 16)
+
+[node name="Sprite2D" type="Sprite2D" parent="Stolik"]
+position = Vector2(-3.09944e-06, 0.0624993)
+scale = Vector2(0.057, 0.022875)
+texture = ExtResource("5_sy3b7")
 
 [node name="Bierznia" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(942, -185)
 scale = Vector2(6, 14)
 
-[node name="Stacja badawcza" parent="." instance=ExtResource("2_0er4t")]
-position = Vector2(141, -56)
-scale = Vector2(12, 4)
+[node name="Sprite2D" type="Sprite2D" parent="Bierznia"]
+position = Vector2(0, -2.75893)
+scale = Vector2(0.048, 0.0344821)
+texture = ExtResource("6_dmbcm")
 
 [node name="Stacja badawcza2" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(61, -214)
 scale = Vector2(4, 12)
 
+[node name="Sprite2D" type="Sprite2D" parent="Stacja badawcza2"]
+position = Vector2(24.5625, 4.33333)
+scale = Vector2(0.077125, 0.0271667)
+texture = ExtResource("7_2lhiq")
+
+[node name="Stacja badawcza" parent="." instance=ExtResource("2_0er4t")]
+position = Vector2(141, -56)
+scale = Vector2(12, 4)
+
+[node name="Właz" parent="." instance=ExtResource("2_0er4t")]
+position = Vector2(7, -509)
+scale = Vector2(4, 16)
+
 [node name="Rury" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(98, -1021)
 scale = Vector2(8, 2)
 
+[node name="Sprite2D" type="Sprite2D" parent="Rury"]
+position = Vector2(2.9375, -1)
+scale = Vector2(0.015625, 0.03)
+texture = ExtResource("8_c2l58")
+
 [node name="Rury2" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(38, -921)
 scale = Vector2(2, 8)
+
+[node name="Sprite2D" type="Sprite2D" parent="Rury2"]
+position = Vector2(8, 0.875003)
+scale = Vector2(0.049, 0.021125)
+texture = ExtResource("9_jpe54")
 
 [node name="Kapsula" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(9, -761)
@@ -53,6 +113,11 @@ scale = Vector2(4, 4)
 [node name="Wieszak na skafander" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(289, -1036)
 scale = Vector2(2, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wieszak na skafander"]
+position = Vector2(269.5, 147.688)
+scale = Vector2(0.13075, 0.139375)
+texture = ExtResource("11_arsgh")
 
 [node name="Lampka sprawdzająca działanie stacji badawczej" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(280, -56)
