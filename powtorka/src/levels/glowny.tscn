@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://baea7r4fbw8lr"]
+[gd_scene load_steps=16 format=3 uid="uid://baea7r4fbw8lr"]
 
 [ext_resource type="PackedScene" uid="uid://d1kkcfxkbvy1m" path="res://src/levels/rooms/room_big_closed.tscn" id="1_1k4ns"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/object.tscn" id="2_0er4t"]
@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://boa3cfwlhfj1q" path="res://asstes/graphics/mapa/rury2.png" id="8_c2l58"]
 [ext_resource type="Texture2D" uid="uid://c6j8hfvlwges3" path="res://asstes/graphics/mapa/rury.png" id="9_jpe54"]
 [ext_resource type="Texture2D" uid="uid://bc1faromt8p7g" path="res://asstes/graphics/mapa/wieszak.png" id="11_arsgh"]
+[ext_resource type="Texture2D" uid="uid://dg2euqmv7cnl5" path="res://asstes/graphics/mapa/lamkac.png" id="12_kvnfd"]
+[ext_resource type="Texture2D" uid="uid://cms3mfba6c2yy" path="res://asstes/graphics/mapa/lamkaz.png" id="13_3mvej"]
 
 [node name="Glowna" type="Node2D"]
 
@@ -113,17 +115,37 @@ texture = ExtResource("11_arsgh")
 [node name="Lampka sprawdzająca działanie stacji badawczej" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(280, -56)
 
+[node name="Sprite2D" type="Sprite2D" parent="Lampka sprawdzająca działanie stacji badawczej"]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("12_kvnfd")
+
 [node name="Lampka sprawdzająca właz2" parent="." instance=ExtResource("2_0er4t")]
-position = Vector2(38, -819)
+position = Vector2(639, -1014)
+
+[node name="Sprite2D" type="Sprite2D" parent="Lampka sprawdzająca właz2"]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("12_kvnfd")
 
 [node name="Lampka sprawdzająca właz" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(39, -693)
 
+[node name="Sprite2D" type="Sprite2D" parent="Lampka sprawdzająca właz"]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("13_3mvej")
+
 [node name="Lampka sprawdzająca bierznie" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(949, -353)
 
+[node name="Sprite2D" type="Sprite2D" parent="Lampka sprawdzająca bierznie"]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("12_kvnfd")
+
 [node name="Lampka sprawdzająca porządek" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(821, -905)
+
+[node name="Sprite2D" type="Sprite2D" parent="Lampka sprawdzająca porządek"]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("12_kvnfd")
 
 [node name="miejsce na krzeslo" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(676, -657)
