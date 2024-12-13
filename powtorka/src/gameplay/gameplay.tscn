@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://ddg2su88rjrwp"]
+[gd_scene load_steps=13 format=3 uid="uid://ddg2su88rjrwp"]
 
 [ext_resource type="Script" path="res://src/gameplay/gameplay.gd" id="1_qu5en"]
 [ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="2_28rhj"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://gfjdl53o7iuk" path="res://asstes/graphics/mapa/kupek.png" id="9_ld6nv"]
 [ext_resource type="Texture2D" uid="uid://sc3ltnisc0lc" path="res://asstes/graphics/mapa/krzeso1.png" id="10_angt0"]
 [ext_resource type="Texture2D" uid="uid://ccwgn0h7l6r3n" path="res://asstes/graphics/mapa/KARTA_DOSTEPU.png" id="11_gwqab"]
+[ext_resource type="Texture2D" uid="uid://bk8qqr5jmn3kj" path="res://asstes/graphics/mapa/kurwa_rzeb_kopia.png" id="12_dy63g"]
 
 [node name="Gameplay" type="Node2D"]
 script = ExtResource("1_qu5en")
@@ -18,7 +19,7 @@ script = ExtResource("1_qu5en")
 [node name="Kokpit" parent="." instance=ExtResource("5_a6v07")]
 position = Vector2(-65, 3337)
 
-[node name="Salon" parent="." instance=ExtResource("3_gudmw")]
+[node name="Glowny" parent="." instance=ExtResource("3_gudmw")]
 position = Vector2(-35, 2230)
 
 [node name="Sypialnia" parent="." instance=ExtResource("2_rd5ia")]
@@ -35,10 +36,9 @@ position = Vector2(118, 66)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="UI" parent="CanvasLayer" instance=ExtResource("4_gb6tb")]
-offset_left = -12.0
-offset_top = 23.0
-offset_right = -12.0
-offset_bottom = 23.0
+
+[node name="Timer" type="Timer" parent="CanvasLayer"]
+wait_time = 5.0
 
 [node name="Kubeczek" parent="." instance=ExtResource("4_44x78")]
 position = Vector2(20, 1945)
@@ -70,3 +70,15 @@ START_POSITION_Y = 3400
 position = Vector2(0, -2)
 scale = Vector2(0.08, 0.08)
 texture = ExtResource("11_gwqab")
+
+[node name="Rzep" parent="." instance=ExtResource("4_44x78")]
+position = Vector2(782, 1446)
+START_POSITION_X = 775
+START_POSITION_Y = 1450
+
+[node name="Sprite2D" type="Sprite2D" parent="Rzep"]
+position = Vector2(-0.99999, 3.8147e-05)
+scale = Vector2(0.0599999, 0.06)
+texture = ExtResource("12_dy63g")
+
+[connection signal="timeout" from="CanvasLayer/Timer" to="." method="_on_timer_timeout"]

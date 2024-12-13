@@ -45,7 +45,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Fluff text" type="Label" parent="."]
+[node name="Flufftext" type="Label" parent="."]
 visible = false
 layout_mode = 0
 offset_right = 1920.0
@@ -63,8 +63,6 @@ material = SubResource("ShaderMaterial_84yst")
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-
-[node name="TextTimer" type="Timer" parent="."]
 
 [connection signal="timeout" from="UnshaderTimer" to="." method="_on_unshader_timer_timeout"]
 [connection signal="timeout" from="ShaderTimer" to="." method="_on_shader_timer_timeout"]
