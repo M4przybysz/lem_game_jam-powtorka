@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cgssltc1n83kf"]
+[gd_scene load_steps=6 format=3 uid="uid://cgssltc1n83kf"]
 
 [ext_resource type="Shader" path="res://asstes/graphics/shaders/grain.gdshader" id="1_ut4yp"]
 [ext_resource type="Script" path="res://src/UI/ui.gd" id="1_vajhg"]
 [ext_resource type="FontFile" uid="uid://ctyvbudxwnx5g" path="res://asstes/fonts/EncodeSans-ExtraBold.ttf" id="2_7k1b4"]
+[ext_resource type="Texture2D" uid="uid://67x2gi6e0me2" path="res://asstes/graphics/mapa/lokacja1.jpg" id="3_8osdf"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_84yst"]
 shader = ExtResource("1_ut4yp")
@@ -25,11 +26,15 @@ wait_time = 0.2
 wait_time = 0.2
 
 [node name="Black" type="ColorRect" parent="."]
-visible = false
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Black"]
+position = Vector2(961, 638)
+scale = Vector2(1.9, 1.9)
+texture = ExtResource("3_8osdf")
 
 [node name="Terapeutka" type="Label" parent="Black"]
 visible = false
