@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://baea7r4fbw8lr"]
+[gd_scene load_steps=3 format=3 uid="uid://baea7r4fbw8lr"]
 
 [ext_resource type="PackedScene" uid="uid://d1kkcfxkbvy1m" path="res://src/levels/rooms/room_big_closed.tscn" id="1_1k4ns"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/object.tscn" id="2_0er4t"]
-[ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="3_cere0"]
 
 [node name="Glowna" type="Node2D"]
 
@@ -59,9 +58,6 @@ scale = Vector2(2, 2)
 
 [node name="Lampka sprawdzająca działanie stacji badawczej" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(280, -56)
-
-[node name="Player" parent="." instance=ExtResource("3_cere0")]
-position = Vector2(345, -159)
 
 [node name="Lampka sprawdzająca właz2" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(38, -819)
