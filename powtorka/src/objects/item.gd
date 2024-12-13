@@ -33,6 +33,9 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		can_pick_up = true
 
+func sset_position(x, y):
+	global_position = Vector2(x, y)
+
 func reset_position():
 	glued = false
 	can_pick_up = false

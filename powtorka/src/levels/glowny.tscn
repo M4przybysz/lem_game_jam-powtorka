@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://baea7r4fbw8lr"]
+[gd_scene load_steps=4 format=3 uid="uid://baea7r4fbw8lr"]
 
 [ext_resource type="PackedScene" uid="uid://d1kkcfxkbvy1m" path="res://src/levels/rooms/room_big_closed.tscn" id="1_1k4ns"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/object.tscn" id="2_0er4t"]
 [ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="3_cere0"]
-[ext_resource type="PackedScene" uid="uid://u330yrurm5sq" path="res://src/objects/item.tscn" id="4_0iudd"]
 
 [node name="Glowna" type="Node2D"]
 
@@ -76,16 +75,9 @@ position = Vector2(949, -353)
 [node name="Lampka sprawdzająca porządek" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(821, -905)
 
-[node name="Krzeslo4" parent="." instance=ExtResource("4_0iudd")]
-position = Vector2(547, -417)
-scale = Vector2(2, 2)
-
 [node name="miejsce na krzeslo" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(676, -657)
 scale = Vector2(5, 5)
 
 [node name="Lampka sprawdzająca rury" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(195, -1023)
-
-[node name="Kubeczek" parent="." instance=ExtResource("4_0iudd")]
-position = Vector2(57, -301)

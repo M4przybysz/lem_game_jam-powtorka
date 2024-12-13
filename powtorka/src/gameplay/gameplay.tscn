@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://ddg2su88rjrwp"]
+[gd_scene load_steps=9 format=3 uid="uid://ddg2su88rjrwp"]
 
 [ext_resource type="Script" path="res://src/gameplay/gameplay.gd" id="1_qu5en"]
 [ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="2_28rhj"]
 [ext_resource type="PackedScene" uid="uid://c20f17njqysr" path="res://src/levels/sypialnia.tscn" id="2_rd5ia"]
 [ext_resource type="PackedScene" uid="uid://baea7r4fbw8lr" path="res://src/levels/glowny.tscn" id="3_gudmw"]
+[ext_resource type="PackedScene" uid="uid://u330yrurm5sq" path="res://src/objects/item.tscn" id="4_44x78"]
 [ext_resource type="PackedScene" uid="uid://cgssltc1n83kf" path="res://src/UI/ui.tscn" id="4_gb6tb"]
 [ext_resource type="PackedScene" uid="uid://bcwa6qwmc5mku" path="res://src/levels/kokpit.tscn" id="5_a6v07"]
 [ext_resource type="PackedScene" uid="uid://cwblrpmalwlie" path="res://src/levels/kuchnia.tscn" id="5_lja5u"]
@@ -31,3 +32,13 @@ position = Vector2(118, 66)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="UI" parent="CanvasLayer" instance=ExtResource("4_gb6tb")]
+
+[node name="Kubeczek" parent="." instance=ExtResource("4_44x78")]
+position = Vector2(20, 1944)
+
+[node name="Krzeslo4" parent="." instance=ExtResource("4_44x78")]
+position = Vector2(512, 1812)
+scale = Vector2(2, 2)
+
+[node name="PlakietkaIDEwy" parent="." instance=ExtResource("4_44x78")]
+position = Vector2(693, 3382)
