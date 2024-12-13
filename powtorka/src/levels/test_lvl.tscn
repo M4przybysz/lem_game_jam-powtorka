@@ -1,9 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://gpcqqw6efjpy"]
+[gd_scene load_steps=14 format=3 uid="uid://gpcqqw6efjpy"]
 
 [ext_resource type="PackedScene" uid="uid://brwy8u50fkdpl" path="res://src/teleport/teleport.tscn" id="1_5ianb"]
 [ext_resource type="Script" path="res://src/levels/test_lvl.gd" id="1_aw7th"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/test_object.tscn" id="2_p6ti2"]
 [ext_resource type="PackedScene" uid="uid://kypq6a5jjvq0" path="res://src/levels/corridors/corridor_gayen't.tscn" id="2_uhx2c"]
+[ext_resource type="PackedScene" uid="uid://c3mkijbfnfilr" path="res://src/levels/rooms/room_medium_open_left.tscn" id="5_ajico"]
+[ext_resource type="PackedScene" uid="uid://ofmada627bwp" path="res://src/levels/rooms/room_medium_closed.tscn" id="6_t71gy"]
+[ext_resource type="PackedScene" uid="uid://d1kkcfxkbvy1m" path="res://src/levels/rooms/room_big_closed.tscn" id="7_tt0cp"]
+[ext_resource type="PackedScene" uid="uid://cp4lfi2be2bqn" path="res://src/levels/corridors/corridor_gay.tscn" id="8_bs2tj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1kp0d"]
 size = Vector2(312, 15)
@@ -21,6 +25,8 @@ size = Vector2(133, 8.75)
 radius = 60.0333
 
 [node name="test lvl" type="Node2D"]
+
+position = Vector2(-33, -430)
 script = ExtResource("1_aw7th")
 
 [node name="Room1" type="StaticBody2D" parent="."]
@@ -46,6 +52,7 @@ offset_left = 431.0
 offset_right = 729.0
 offset_bottom = 298.0
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="Room2" type="StaticBody2D" parent="."]
 
@@ -69,6 +76,7 @@ shape = SubResource("RectangleShape2D_lfui8")
 offset_right = 298.0
 offset_bottom = 298.0
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="corridor gayen\'t" parent="." instance=ExtResource("2_uhx2c")]
 position = Vector2(290, -6)
@@ -110,6 +118,7 @@ offset_top = 498.5
 offset_right = 487.0
 offset_bottom = 796.5
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="wall w2" type="CollisionShape2D" parent="Room3"]
 position = Vector2(484, 648)
@@ -143,5 +152,20 @@ position = Vector2(25, 271)
 [node name="Object2" parent="Objects" instance=ExtResource("2_p6ti2")]
 visible = false
 position = Vector2(458, 277)
+
+[node name="Room_Medium_Open_Left" parent="." instance=ExtResource("5_ajico")]
+position = Vector2(803, -1811)
+
+[node name="Room_Medium_Closed" parent="." instance=ExtResource("6_t71gy")]
+position = Vector2(-963, -1800)
+
+[node name="Room_Big_Closed" parent="." instance=ExtResource("7_tt0cp")]
+position = Vector2(-73, -1239)
+
+[node name="corridor gayen\'t2" parent="." instance=ExtResource("2_uhx2c")]
+position = Vector2(-1378, -891)
+
+[node name="corridor gay" parent="." instance=ExtResource("8_bs2tj")]
+position = Vector2(-1264, -554)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
