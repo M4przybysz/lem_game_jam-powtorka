@@ -187,6 +187,8 @@ size = Vector2(35, 82)
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_vkcnm")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
 [node name="animation" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_mgl5a")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://baea7r4fbw8lr"]
+[gd_scene load_steps=20 format=3 uid="uid://baea7r4fbw8lr"]
 
 [ext_resource type="PackedScene" uid="uid://d1kkcfxkbvy1m" path="res://src/levels/rooms/room_big_closed.tscn" id="1_1k4ns"]
 [ext_resource type="Script" path="res://src/levels/glowny.gd" id="1_qprsl"]
@@ -17,6 +17,9 @@
 [ext_resource type="Texture2D" uid="uid://crk1nwpq4tbmr" path="res://asstes/graphics/mapa/wieszak2.png" id="12_8rkym"]
 [ext_resource type="Texture2D" uid="uid://dg2euqmv7cnl5" path="res://asstes/graphics/mapa/lamkac.png" id="12_kvnfd"]
 [ext_resource type="Texture2D" uid="uid://cms3mfba6c2yy" path="res://asstes/graphics/mapa/lamkaz.png" id="13_3mvej"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rix1f"]
+radius = 11.4856
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_06k6p"]
 
@@ -107,10 +110,6 @@ position = Vector2(8, 0.875003)
 scale = Vector2(0.049, 0.021125)
 texture = ExtResource("9_jpe54")
 
-[node name="Kapsula" parent="." instance=ExtResource("2_0er4t")]
-position = Vector2(9, -761)
-scale = Vector2(4, 4)
-
 [node name="Wieszak na skafander" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(289, -1036)
 scale = Vector2(2, 2)
@@ -165,6 +164,11 @@ texture = ExtResource("12_kvnfd")
 position = Vector2(676, -657)
 scale = Vector2(5, 5)
 
+[node name="chair_place" type="Area2D" parent="miejsce na krzeslo"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="miejsce na krzeslo/chair_place"]
+shape = SubResource("CircleShape2D_rix1f")
+
 [node name="Lampka sprawdzająca rury" parent="." instance=ExtResource("2_0er4t")]
 position = Vector2(195, -1023)
 
@@ -216,10 +220,11 @@ rotation = 1.5708
 scale = Vector2(0.1, 0.022)
 texture = ExtResource("4_1cvcg")
 
-[node name="Area2D" type="Area2D" parent="Wlaz3"]
+[node name="kapsula" type="Area2D" parent="Wlaz3"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Wlaz3/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wlaz3/kapsula"]
 shape = SubResource("RectangleShape2D_06k6p")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="body_entered" from="Wlaz3/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="miejsce na krzeslo/chair_place" to="." method="_on_chair_place_body_entered"]
+[connection signal="body_entered" from="Wlaz3/kapsula" to="." method="_on_kapsula_body_entered"]

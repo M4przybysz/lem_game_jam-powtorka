@@ -20,6 +20,8 @@ func _input(event: InputEvent) -> void:
 			glued = true
 			can_pick_up = false
 			get_parent().player_holds_item = true
+			if is_in_group("cup") && get_parent().chair_in_place == true:
+				get_parent().glowny.show_hatch1()
 		else:
 			glued = false
 			get_parent().player_holds_item = false

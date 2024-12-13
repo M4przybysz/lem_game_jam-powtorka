@@ -1,12 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://cwblrpmalwlie"]
+[gd_scene load_steps=8 format=3 uid="uid://cwblrpmalwlie"]
 
 [ext_resource type="PackedScene" uid="uid://ofmada627bwp" path="res://src/levels/rooms/room_medium_closed.tscn" id="1_8yqsu"]
 [ext_resource type="Texture2D" uid="uid://kh07qhbuof1n" path="res://asstes/graphics/mapa/kuchnia.png" id="1_lp1hb"]
+[ext_resource type="Script" path="res://src/levels/kuchnia.gd" id="1_nx1ej"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/object.tscn" id="3_qsbla"]
 [ext_resource type="PackedScene" uid="uid://brwy8u50fkdpl" path="res://src/teleport/teleport.tscn" id="4_73ywl"]
 [ext_resource type="Texture2D" uid="uid://cq2nmcwblbu13" path="res://asstes/graphics/mapa/wlaz2.png" id="5_jbtt7"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wtqjq"]
+size = Vector2(179, 171)
+
 [node name="Kuchnia" type="Node2D"]
+script = ExtResource("1_nx1ej")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(475, 295)
@@ -42,3 +50,12 @@ destination_y = 1800
 position = Vector2(-58, 53.3333)
 scale = Vector2(0.5, 0.11)
 texture = ExtResource("5_jbtt7")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(377.5, 274)
+shape = SubResource("RectangleShape2D_wtqjq")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

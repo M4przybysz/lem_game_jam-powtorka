@@ -1,5 +1,8 @@
 extends Node2D
 
+
+@onready var glowny: Node2D = $Glowny
+
 @onready var player: CharacterBody2D = $Player
 @onready var ui: Control = $CanvasLayer/UI
 @onready var kubeczek: Node2D = $Kubeczek
@@ -12,6 +15,7 @@ extends Node2D
 var loop_count: int = 0
 var player_holds_item: bool = false
 var player_holds_adam: bool = true
+var chair_in_place: bool = false
 
 var terapeutka_tekst = [
 	"Czy w takim razie chcesz o tym porozmawiać?", 
@@ -28,7 +32,7 @@ var Kapsuła_tekst =[
 	"Nie tak powinny wyglądać jej ostatnie chwile…"
 ]
 
-var	sypialnia_tekst = [
+var sypialnia_tekst = [
 	"Nie wiem po co jeszcze biorę te leki…",
 	"Nic mi nie pomagają…",
 	"Może znowu pójdę spać…"
@@ -36,7 +40,8 @@ var	sypialnia_tekst = [
 
 var salon_tekst = [
 	"Wtedy była moja warta, musiałem upewnić się, że jesteśmy bezpieczni.",
-	"Wtedy poszedłem napić się kawy."
+	"Wtedy poszedłem napić się kawy.",
+	"Może kawa mnie rozbudzi."
 ]
 	
 var kuchnia_tekst = [
@@ -85,6 +90,11 @@ func start_story():
 	ui.show_therapy_text(terapeutka_tekst[0])
 	timer.start()
 
+func start_loop2():
+	reset_loop()
+	$Kubeczek.global_position = Vector2(50, 150)
+	$Kubeczek.visible = true
+	$Krzeslo4.visible = true
 
 func _on_timer_timeout() -> void:
 	ui.hide_therapy_text()

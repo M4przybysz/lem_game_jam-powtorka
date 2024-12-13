@@ -15,21 +15,21 @@ func hide_hatches():
 	$Wlaz2.visible = false
 
 func show_hatch1():
-	$Wlaz.visible = true
+	$Wlaz1.visible = true
 
 func show_hatch2():
-	$Wlaz.visible = true
+	$Wlaz2.visible = true
 
-
-func _on_area_2d_body_entered(body: Node2D) -> void:
+func _on_kapsula_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player") && get_parent().rzep.glued == true:
 		memory1()
 
 func memory1():
 	get_parent().ui.blink = 0
 	get_parent().ui.kszksz()
-	# wstawić odtwarzanie dźwięku
 	$Timer.start()
+	# wstawić odtwarzanie dźwięku
+	$"Lampka sprawdzająca właz2/Sprite2D".texture = load("res://asstes/graphics/mapa/lamkaz.png")
 
 func _on_timer_timeout() -> void:
 	$Timer.stop()
@@ -37,4 +37,11 @@ func _on_timer_timeout() -> void:
 	get_parent().ui.kszksz()
 	get_parent().timer.start(3.0)
 	get_parent().ui.show_therapy_text(get_parent().terapeutka_tekst[1])
-	get_parent().reset_loop()
+	get_parent().start_loop2()
+
+
+func _on_chair_place_body_entered(body: Node2D) -> void:
+	print(body)
+	if body.is_in_group("player"):
+		get_parent().chair_in_place = true
+		print(get_parent().chair_in_place)

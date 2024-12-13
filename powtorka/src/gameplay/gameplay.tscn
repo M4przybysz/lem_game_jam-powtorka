@@ -40,7 +40,7 @@ position = Vector2(118, 66)
 [node name="Timer" type="Timer" parent="CanvasLayer"]
 wait_time = 5.0
 
-[node name="Kubeczek" parent="." instance=ExtResource("4_44x78")]
+[node name="Kubeczek" parent="." groups=["cup"] instance=ExtResource("4_44x78")]
 position = Vector2(20, 1945)
 START_POSITION_X = 20
 START_POSITION_Y = 1945
@@ -50,7 +50,7 @@ position = Vector2(10, -0.999996)
 scale = Vector2(0.08, 0.08)
 texture = ExtResource("9_ld6nv")
 
-[node name="Krzeslo4" parent="." instance=ExtResource("4_44x78")]
+[node name="Krzeslo4" parent="." groups=["chair"] instance=ExtResource("4_44x78")]
 position = Vector2(500, 1800)
 scale = Vector2(2, 2)
 START_POSITION_X = 500
