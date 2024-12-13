@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=3 uid="uid://cgssltc1n83kf"]
+
+[ext_resource type="Shader" path="res://asstes/graphics/shaders/grain.gdshader" id="1_ut4yp"]
+[ext_resource type="Script" path="res://src/UI/ui.gd" id="1_vajhg"]
+[ext_resource type="FontFile" uid="uid://ctyvbudxwnx5g" path="res://asstes/fonts/EncodeSans-ExtraBold.ttf" id="2_7k1b4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_84yst"]
+shader = ExtResource("1_ut4yp")
+shader_parameter/grain_amount = 0.5
+shader_parameter/grain_size = 0.5
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vajhg")
+
+[node name="UnshaderTimer" type="Timer" parent="."]
+wait_time = 0.2
+
+[node name="ShaderTimer" type="Timer" parent="."]
+wait_time = 0.2
+
+[node name="Black" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="Terapeutka" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_fonts/font = ExtResource("2_7k1b4")
+theme_override_font_sizes/font_size = 30
+text = "Terapeutka text"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Fluff text" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1002.0
+theme_override_fonts/font = ExtResource("2_7k1b4")
+theme_override_font_sizes/font_size = 30
+text = "Fluff text"
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_84yst")
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[connection signal="timeout" from="UnshaderTimer" to="." method="_on_unshader_timer_timeout"]
+[connection signal="timeout" from="ShaderTimer" to="." method="_on_shader_timer_timeout"]
