@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://gpcqqw6efjpy"]
+[gd_scene load_steps=10 format=3 uid="uid://gpcqqw6efjpy"]
 
 [ext_resource type="PackedScene" uid="uid://brwy8u50fkdpl" path="res://src/teleport/teleport.tscn" id="1_5ianb"]
 [ext_resource type="Script" path="res://src/levels/test_lvl.gd" id="1_aw7th"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/test_object.tscn" id="2_p6ti2"]
+[ext_resource type="PackedScene" uid="uid://kypq6a5jjvq0" path="res://src/levels/corridors/corridor_gayen't.tscn" id="2_uhx2c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1kp0d"]
 size = Vector2(312, 15)
@@ -69,7 +70,11 @@ offset_right = 298.0
 offset_bottom = 298.0
 color = Color(1, 0, 1, 1)
 
+[node name="corridor gayen\'t" parent="." instance=ExtResource("2_uhx2c")]
+position = Vector2(290, -6)
+
 [node name="Corridor" type="StaticBody2D" parent="."]
+visible = false
 
 [node name="wall n" type="CollisionShape2D" parent="Corridor"]
 position = Vector2(364, -4.375)
@@ -114,6 +119,8 @@ shape = SubResource("RectangleShape2D_lfui8")
 
 [node name="Teleport" parent="Teleports" instance=ExtResource("1_5ianb")]
 position = Vector2(621, 188)
+destination_x = 300
+destination_y = 620
 
 [node name="Teleport1" parent="Teleports" instance=ExtResource("1_5ianb")]
 position = Vector2(372, 686)
