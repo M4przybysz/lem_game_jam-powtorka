@@ -1,256 +1,209 @@
-[gd_scene load_steps=5 format=3 uid="uid://6o85knhcbaqp"]
+[gd_scene load_steps=9 format=3 uid="uid://bcwa6qwmc5mku"]
 
 [ext_resource type="PackedScene" uid="uid://d1kkcfxkbvy1m" path="res://src/levels/rooms/room_big_closed.tscn" id="1_ov4ay"]
+[ext_resource type="Texture2D" uid="uid://2wg2wxlgf0a4" path="res://asstes/graphics/mapa/kokpit.png" id="1_x5wva"]
 [ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/object.tscn" id="3_dbt3h"]
+[ext_resource type="Texture2D" uid="uid://dhi7s4ko4gpra" path="res://asstes/graphics/mapa/PIWO.png" id="4_480b3"]
 [ext_resource type="PackedScene" uid="uid://brwy8u50fkdpl" path="res://src/teleport/teleport.tscn" id="4_w2pdo"]
-[ext_resource type="PackedScene" path="res://src/objects/item.tscn" id="5_ivw83"]
-[ext_resource type="PackedScene" uid="uid://bsjliawskluyg" path="res://src/levels/assets/assets_base.tscn" id="5_llea8"]
 
-[node name="Node2D2" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_anxpm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ab1rm"]
+size = Vector2(404.388, 141.337)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7tfli"]
+size = Vector2(403.836, 144.331)
+
+[node name="Kokpit" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(513, 510)
+texture = ExtResource("1_x5wva")
 
 [node name="Room_Big_Closed" parent="." instance=ExtResource("1_ov4ay")]
+visible = false
 position = Vector2(-11, 5)
 
-[node name="Fotel" parent="." instance=ExtResource("3_dbt3h")]
-position = Vector2(386, 913)
-scale = Vector2(6, 3)
+[node name="Butelka2" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(138, 441)
+destination_x = 199
+destination_y = 3650
 
-[node name="Fotel2" parent="." instance=ExtResource("3_dbt3h")]
-position = Vector2(669, 914)
-scale = Vector2(6, 3)
+[node name="Sprite2D" type="Sprite2D" parent="Butelka2"]
+position = Vector2(49, 47)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_480b3")
 
-[node name="butelkas" type="Node2D" parent="."]
-position = Vector2(103, 240)
+[node name="Butelka26" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(240, 438)
+destination_x = 200
+destination_y = 3650
 
-[node name="Butelka" parent="butelkas" instance=ExtResource("4_w2pdo")]
+[node name="Sprite2D" type="Sprite2D" parent="Butelka26"]
+position = Vector2(49, 47)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_480b3")
 
-[node name="Butelka2" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(100, 1)
+[node name="Butelka27" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(237, 536)
+destination_x = 200
+destination_y = 3650
 
-[node name="Butelka3" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(300, -2)
+[node name="Sprite2D" type="Sprite2D" parent="Butelka27"]
+position = Vector2(49, 47)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_480b3")
 
-[node name="Butelka4" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(401, -2)
+[node name="Butelka28" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(340, 441)
+destination_x = 200
+destination_y = 3650
 
-[node name="Butelka5" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(502, -4)
+[node name="Sprite2D" type="Sprite2D" parent="Butelka28"]
+position = Vector2(49, 47)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_480b3")
 
-[node name="Butelka6" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(601, -4)
+[node name="Butelka29" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(337, 539)
+destination_x = 200
+destination_y = 3650
 
-[node name="Butelka7" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(697, -4)
+[node name="Sprite2D" type="Sprite2D" parent="Butelka29"]
+position = Vector2(49, 47)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_480b3")
 
-[node name="Butelka8" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(796, -4)
+[node name="Butelka30" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(736, 539)
+destination_x = 200
+destination_y = 3650
 
-[node name="Butelka9" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(-95, -1)
+[node name="Sprite2D" type="Sprite2D" parent="Butelka30"]
+position = Vector2(49, 47)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_480b3")
 
-[node name="Butelka10" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(-98, 98)
+[node name="Butelka4" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(439, 438)
+destination_x = 200
+destination_y = 3650
 
-[node name="Butelka11" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(1, 98)
+[node name="Sprite2D" type="Sprite2D" parent="Butelka4"]
+position = Vector2(49, 47)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_480b3")
 
-[node name="Butelka12" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(99, 98)
+[node name="Butelka5" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(540, 436)
+destination_x = 200
+destination_y = 3650
 
-[node name="Butelka13" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(795, 96)
+[node name="Sprite2D" type="Sprite2D" parent="Butelka5"]
+position = Vector2(49, 47)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_480b3")
 
-[node name="Butelka14" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(797, 195)
+[node name="Butelka7" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(735, 436)
+destination_x = 200
+destination_y = 3650
 
-[node name="Butelka15" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(597, 196)
+[node name="Sprite2D" type="Sprite2D" parent="Butelka7"]
+position = Vector2(49, 47)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_480b3")
 
-[node name="Butelka16" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(498, 199)
+[node name="Butelka12" parent="." instance=ExtResource("4_w2pdo")]
+position = Vector2(137, 538)
+destination_x = 200
+destination_y = 3650
 
-[node name="Butelka17" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(399, 196)
+[node name="Sprite2D" type="Sprite2D" parent="Butelka12"]
+position = Vector2(49, 47)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_480b3")
 
-[node name="Butelka18" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(303, 193)
-
-[node name="Butelka19" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(204, 193)
-
-[node name="Butelka20" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(106, 198)
-
-[node name="Butelka21" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(3, 195)
-
-[node name="Butelka22" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(-95, 192)
-
-[node name="Butelka23" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(-98, 291)
-
-[node name="Butelka24" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(3, 291)
-
-[node name="Butelka25" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(797, 293)
-
-[node name="Butelka26" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(795, 396)
-
-[node name="Butelka27" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(694, 396)
-
-[node name="Butelka28" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(593, 396)
-
-[node name="Butelka29" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(495, 394)
-
-[node name="Butelka30" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(397, 394)
-
-[node name="Butelka31" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(298, 394)
-
-[node name="Butelka32" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(206, 394)
-
-[node name="Butelka33" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(6, 392)
-
-[node name="Butelka34" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(-93, 392)
-
-[node name="Butelka35" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(-95, 488)
-
-[node name="Butelka36" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(4, 490)
-
-[node name="Butelka37" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(206, 493)
-
-[node name="Butelka38" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(305, 493)
-
-[node name="Butelka39" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(399, 493)
-
-[node name="Butelka40" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(497, 495)
-
-[node name="Butelka41" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(595, 495)
-
-[node name="Butelka42" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(694, 497)
-
-[node name="Butelka43" parent="butelkas" instance=ExtResource("4_w2pdo")]
-position = Vector2(795, 497)
-
-[node name="ButelkaAleBezpieczna" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(251, 49)
+[node name="ButelkaAleBezpieczna" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(683, 489)
 scale = Vector2(5, 5)
 
-[node name="ButelkaAleBezpieczna2" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(251, 147)
+[node name="Sprite2D" type="Sprite2D" parent="ButelkaAleBezpieczna"]
+position = Vector2(-0.399995, -0.399998)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("4_480b3")
+
+[node name="ButelkaAleBezpieczna12" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(684, 587)
 scale = Vector2(5, 5)
 
-[node name="ButelkaAleBezpieczna3" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(350, 149)
+[node name="Sprite2D" type="Sprite2D" parent="ButelkaAleBezpieczna12"]
+position = Vector2(-0.399995, -0.399998)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("4_480b3")
+
+[node name="ButelkaAleBezpieczna13" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(486, 587)
 scale = Vector2(5, 5)
 
-[node name="ButelkaAleBezpieczna4" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(448, 147)
+[node name="Sprite2D" type="Sprite2D" parent="ButelkaAleBezpieczna13"]
+position = Vector2(-0.399995, -0.399998)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("4_480b3")
+
+[node name="ButelkaAleBezpieczna14" parent="." instance=ExtResource("3_dbt3h")]
+position = Vector2(585, 587)
 scale = Vector2(5, 5)
 
-[node name="ButelkaAleBezpieczna5" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(547, 147)
-scale = Vector2(5, 5)
+[node name="Sprite2D" type="Sprite2D" parent="ButelkaAleBezpieczna14"]
+position = Vector2(-0.399995, -0.399998)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("4_480b3")
 
-[node name="ButelkaAleBezpieczna12" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(646, 147)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna13" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(742, 147)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna14" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(744, 248)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna15" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(744, 346)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna16" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(646, 346)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna17" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(545, 344)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna6" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(448, 342)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna7" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(350, 344)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna8" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(256, 344)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna9" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(155, 344)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna10" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(156, 445)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna11" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(156, 544)
-scale = Vector2(5, 5)
-
-[node name="ButelkaAleBezpieczna18" parent="butelkas" instance=ExtResource("3_dbt3h")]
-position = Vector2(156, 544)
-scale = Vector2(5, 5)
-
-[node name="konsola-grupa" type="Node2D" parent="."]
-position = Vector2(517, 988)
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
+position = Vector2(517, 909)
 scale = Vector2(51, 5)
 
-[node name="Konsola" parent="konsola-grupa" instance=ExtResource("3_dbt3h")]
+[node name="Konsola" parent="StaticBody2D" instance=ExtResource("3_dbt3h")]
+scale = Vector2(1, 1)
 
-[node name="assets" parent="konsola-grupa/Konsola" instance=ExtResource("5_llea8")]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_anxpm")
 
-[node name="Konsola2" parent="konsola-grupa" instance=ExtResource("3_dbt3h")]
-position = Vector2(9.01961, -19.4)
-scale = Vector2(0.0980392, 1)
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+visible = false
 
-[node name="assets" parent="konsola-grupa/Konsola2" instance=ExtResource("5_llea8")]
+[node name="Konsola2" parent="StaticBody2D3" instance=ExtResource("3_dbt3h")]
+position = Vector2(874, 672)
+rotation = -1.13446
+scale = Vector2(20, 7)
+skew = -0.436332
 
-[node name="Konsola3" parent="konsola-grupa" instance=ExtResource("3_dbt3h")]
-position = Vector2(-9, -18.6)
-scale = Vector2(0.0980392, 1)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(876, 676)
+rotation = -1.13446
+skew = -0.436332
+shape = SubResource("RectangleShape2D_ab1rm")
 
-[node name="assets" parent="konsola-grupa/Konsola3" instance=ExtResource("5_llea8")]
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+visible = false
 
-[node name="Wejście" parent="." instance=ExtResource("3_dbt3h")]
-position = Vector2(243, 24)
-scale = Vector2(12, 4)
+[node name="Konsola3" parent="StaticBody2D2" instance=ExtResource("3_dbt3h")]
+position = Vector2(137, 675)
+rotation = 1.13446
+scale = Vector2(20, 7)
+skew = 0.436332
 
-[node name="Object" parent="." instance=ExtResource("3_dbt3h")]
-position = Vector2(653, 62)
-scale = Vector2(15, 5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(136.5, 677)
+rotation = 1.13446
+skew = 0.436332
+shape = SubResource("RectangleShape2D_7tfli")
 
-[node name="assets" parent="Object" instance=ExtResource("5_llea8")]
-
-[node name="PlakietkaIDEwy" parent="." instance=ExtResource("5_ivw83")]
-position = Vector2(731, 82)
+[node name="Teleport" parent="." instance=ExtResource("4_w2pdo")]
+visible = false
+position = Vector2(242, 11)
+destination_x = 500
+destination_y = 2100

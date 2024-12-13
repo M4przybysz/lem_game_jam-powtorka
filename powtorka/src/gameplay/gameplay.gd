@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var player: CharacterBody2D = $Player
-
+@onready var ui: Control = $CanvasLayer/UI
 
 var loop_count: int = 0
 var player_holds_item: bool = false
@@ -21,7 +21,9 @@ func _input(event: InputEvent) -> void:
 func reset_loop():
 		loop_count += 1
 		player.reset_position()
-		$Item.reset_position()
+		$Kubeczek.reset_position()
+		$Krzeslo4.reset_position()
+		$PlakietkaIDEwy.reset_position()
 
 func teleport_player(x: int, y: int):
 	player.global_position.x = x

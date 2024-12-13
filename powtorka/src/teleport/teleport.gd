@@ -10,5 +10,5 @@ func set_destination(x,y):
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
-		get_parent().get_parent().get_parent().teleport_player(destination_x, destination_y)
+		get_parent().get_parent().teleport_player(destination_x, destination_y)
 		
