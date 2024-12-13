@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" path="res://src/gameplay/gameplay.gd" id="1_qu5en"]
 [ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="2_28rhj"]
-[ext_resource type="PackedScene" uid="uid://c20f17njqysr" path="res://src/levels/sypialnia.tscn" id="2_rd5ia"]
-[ext_resource type="PackedScene" uid="uid://baea7r4fbw8lr" path="res://src/levels/glowny.tscn" id="3_gudmw"]
+[ext_resource type="PackedScene" uid="uid://byijgbgy51b47" path="res://src/levels/sypialnia.tscn" id="2_rd5ia"]
+[ext_resource type="PackedScene" uid="uid://b2w7emtaenbme" path="res://src/levels/glowny.tscn" id="3_gudmw"]
 [ext_resource type="PackedScene" uid="uid://cgssltc1n83kf" path="res://src/UI/ui.tscn" id="4_gb6tb"]
-[ext_resource type="PackedScene" uid="uid://bcwa6qwmc5mku" path="res://src/levels/kokpit.tscn" id="5_a6v07"]
-[ext_resource type="PackedScene" uid="uid://cwblrpmalwlie" path="res://src/levels/kuchnia.tscn" id="5_lja5u"]
+[ext_resource type="PackedScene" uid="uid://6o85knhcbaqp" path="res://src/levels/kokpit.tscn" id="5_a6v07"]
+[ext_resource type="PackedScene" path="res://src/levels/kuchnia.tscn" id="5_lja5u"]
 
 [node name="Gameplay" type="Node2D"]
 script = ExtResource("1_qu5en")
