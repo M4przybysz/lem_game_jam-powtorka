@@ -1,10 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://dgoa76hq354pd"]
+[gd_scene load_steps=4 format=3 uid="uid://cwblrpmalwlie"]
 
 [ext_resource type="PackedScene" uid="uid://ofmada627bwp" path="res://src/levels/rooms/room_medium_closed.tscn" id="1_8yqsu"]
 [ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="2_ls8ga"]
-[ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/test_object.tscn" id="3_qsbla"]
+[ext_resource type="PackedScene" uid="uid://c5ith1wamnvtw" path="res://src/objects/object.tscn" id="3_qsbla"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Kuchnia" type="Node2D"]
 
 [node name="Room_Medium_Closed" parent="." instance=ExtResource("1_8yqsu")]
 position = Vector2(138, -45)

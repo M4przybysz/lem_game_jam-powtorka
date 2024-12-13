@@ -1,30 +1,30 @@
-[gd_scene load_steps=6 format=3 uid="uid://ddg2su88rjrwp"]
+[gd_scene load_steps=8 format=3 uid="uid://ddg2su88rjrwp"]
 
 [ext_resource type="Script" path="res://src/gameplay/gameplay.gd" id="1_qu5en"]
 [ext_resource type="PackedScene" uid="uid://cshqsixm2pc76" path="res://src/player/player.tscn" id="2_28rhj"]
-[ext_resource type="PackedScene" uid="uid://byijgbgy51b47" path="res://src/levels/sypialnia.tscn" id="2_rd5ia"]
-[ext_resource type="PackedScene" uid="uid://b2w7emtaenbme" path="res://src/levels/glowny.tscn" id="3_gudmw"]
-[ext_resource type="PackedScene" uid="uid://6o85knhcbaqp" path="res://src/levels/kokpit.tscn" id="5_a6v07"]
-[ext_resource type="PackedScene" uid="uid://u330yrurm5sq" path="res://src/objects/item.tscn" id="4_44x78"]
+[ext_resource type="PackedScene" uid="uid://c20f17njqysr" path="res://src/levels/sypialnia.tscn" id="2_rd5ia"]
+[ext_resource type="PackedScene" uid="uid://baea7r4fbw8lr" path="res://src/levels/glowny.tscn" id="3_gudmw"]
 [ext_resource type="PackedScene" uid="uid://cgssltc1n83kf" path="res://src/UI/ui.tscn" id="4_gb6tb"]
+[ext_resource type="PackedScene" uid="uid://bcwa6qwmc5mku" path="res://src/levels/kokpit.tscn" id="5_a6v07"]
+[ext_resource type="PackedScene" uid="uid://cwblrpmalwlie" path="res://src/levels/kuchnia.tscn" id="5_lja5u"]
 
 [node name="Gameplay" type="Node2D"]
 script = ExtResource("1_qu5en")
 
-[node name="Node2D2" parent="." instance=ExtResource("5_a6v07")]
-position = Vector2(-2045, 1016)
+[node name="Kokpit" parent="." instance=ExtResource("5_a6v07")]
+position = Vector2(-65, 3337)
 
-[node name="Node2D" parent="." instance=ExtResource("3_gudmw")]
-position = Vector2(-11, 1064)
+[node name="Salon" parent="." instance=ExtResource("3_gudmw")]
+position = Vector2(-35, 2230)
 
-[node name="Room_Small_Closed" parent="." instance=ExtResource("2_rd5ia")]
-position = Vector2(1918, 1124)
+[node name="Sypialnia" parent="." instance=ExtResource("2_rd5ia")]
+position = Vector2(2, 5)
 
-[node name="Item" parent="." instance=ExtResource("4_44x78")]
-position = Vector2(100, 231)
+[node name="Kuchnia" parent="." instance=ExtResource("5_lja5u")]
+position = Vector2(-85, 5649)
 
 [node name="Player" parent="." instance=ExtResource("2_28rhj")]
-position = Vector2(231, 120)
+position = Vector2(118, 66)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
