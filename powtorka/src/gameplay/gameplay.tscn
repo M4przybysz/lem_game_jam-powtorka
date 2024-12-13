@@ -37,7 +37,7 @@ position = Vector2(118, 66)
 [node name="UI" parent="CanvasLayer" instance=ExtResource("4_gb6tb")]
 
 [node name="Kubeczek" parent="." instance=ExtResource("4_44x78")]
-position = Vector2(20, 1944)
+position = Vector2(20, 1945)
 START_POSITION_X = 20
 START_POSITION_Y = 1945
 
