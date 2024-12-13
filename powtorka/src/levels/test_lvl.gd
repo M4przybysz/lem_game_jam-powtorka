@@ -4,10 +4,9 @@ extends Node2D
 var show_random_object1: bool = false
 var show_random_object2: bool = false
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$teleports/teleport.set_destination(400,620)
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
